@@ -1,0 +1,47 @@
+|Mesi
+Reset => maquina_estados~4.DATAIN
+Reset => Mem_out[0]~reg0.ENA
+Reset => Bus_out[1]~reg0.ENA
+Reset => Bus_out[0]~reg0.ENA
+Reset => Mem_out[1]~reg0.ENA
+clock => Mem_out[0]~reg0.CLK
+clock => Mem_out[1]~reg0.CLK
+clock => Bus_out[0]~reg0.CLK
+clock => Bus_out[1]~reg0.CLK
+clock => maquina_estados~2.DATAIN
+CPU[0] => Equal0.IN0
+CPU[0] => Equal1.IN2
+CPU[1] => Equal0.IN2
+CPU[1] => Equal1.IN1
+CPU[1] => Equal2.IN0
+CPU[1] => Equal3.IN1
+CPU[1] => Equal4.IN1
+CPU[1] => Equal5.IN1
+CPU[2] => Equal0.IN1
+CPU[2] => Equal1.IN0
+CPU[2] => Equal2.IN1
+CPU[2] => Equal3.IN0
+CPU[2] => Equal4.IN0
+CPU[2] => Equal5.IN0
+CPU[3] => maquina_estados.OUTPUTSELECT
+CPU[3] => maquina_estados.OUTPUTSELECT
+CPU[3] => maquina_estados.OUTPUTSELECT
+CPU[3] => maquina_estados.OUTPUTSELECT
+CPU[3] => Bus_out.OUTPUTSELECT
+CPU[3] => Bus_out.OUTPUTSELECT
+CPU[3] => Mem_out.OUTPUTSELECT
+CPU[3] => Mem_out.OUTPUTSELECT
+Bus_in[0] => Equal6.IN0
+Bus_in[0] => Equal7.IN1
+Bus_in[0] => Equal8.IN1
+Bus_in[1] => Equal6.IN1
+Bus_in[1] => Equal7.IN0
+Bus_in[1] => Equal8.IN0
+Bus_out[0] <= Bus_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Bus_out[1] <= Bus_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Mem_out[0] <= Mem_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Mem_out[1] <= Mem_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+estado_atual[0] <= estado_atual.DB_MAX_OUTPUT_PORT_TYPE
+estado_atual[1] <= estado_atual.DB_MAX_OUTPUT_PORT_TYPE
+
+
