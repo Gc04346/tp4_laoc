@@ -7,7 +7,7 @@ module Parte_1(SW, KEY, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7);
 	// Fios necessarios.
 	wire [1:0] bus_out, mem_out, estado; 
 	
-	Mesi maqEst(SW[17:17], KEY[0:0], SW[3:0], SW[6:5], bus_out, mem_out, estado);
+	Mesi maqEst(SW[17:17], ~KEY[0:0], SW[3:0], SW[6:5], bus_out, mem_out, estado);
 	
 	// Displays de SeteSegmentos
 	SeteSeg visorBus({2'b0, bus_out}, HEX4); // Visor do Bus.
