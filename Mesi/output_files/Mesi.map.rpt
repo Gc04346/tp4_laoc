@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Mesi
-Sat Nov 10 12:45:57 2018
+Fri Nov 23 10:32:07 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,13 +13,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Mesi|maquina_estados
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +43,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 10 12:45:57 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 23 10:32:07 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Mesi                                            ;
 ; Top-level Entity Name              ; Mesi                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 34                                              ;
-;     Total combinational functions  ; 34                                              ;
-;     Dedicated logic registers      ; 6                                               ;
-; Total registers                    ; 6                                               ;
-; Total pins                         ; 14                                              ;
+; Total logic elements               ; 20                                              ;
+;     Total combinational functions  ; 20                                              ;
+;     Dedicated logic registers      ; 5                                               ;
+; Total registers                    ; 5                                               ;
+; Total pins                         ; 16                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -158,43 +156,43 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
-; Mesi.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi/Mesi.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; Mesi.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Isaqu/Desktop/TP4_Laoc/Mesi/Mesi.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
 
 
-+------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 34                 ;
-;                                             ;                    ;
-; Total combinational functions               ; 34                 ;
-; Logic element usage by number of LUT inputs ;                    ;
-;     -- 4 input functions                    ; 25                 ;
-;     -- 3 input functions                    ; 6                  ;
-;     -- <=2 input functions                  ; 3                  ;
-;                                             ;                    ;
-; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 34                 ;
-;     -- arithmetic mode                      ; 0                  ;
-;                                             ;                    ;
-; Total registers                             ; 6                  ;
-;     -- Dedicated logic registers            ; 6                  ;
-;     -- I/O registers                        ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 14                 ;
-; Embedded Multiplier 9-bit elements          ; 0                  ;
-; Maximum fan-out node                        ; maquina_estados.01 ;
-; Maximum fan-out                             ; 13                 ;
-; Total fan-out                               ; 147                ;
-; Average fan-out                             ; 2.72               ;
-+---------------------------------------------+--------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 20        ;
+;                                             ;           ;
+; Total combinational functions               ; 20        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 17        ;
+;     -- 3 input functions                    ; 2         ;
+;     -- <=2 input functions                  ; 1         ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 20        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 5         ;
+;     -- Dedicated logic registers            ; 5         ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 16        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; est_at[0] ;
+; Maximum fan-out                             ; 13        ;
+; Total fan-out                               ; 101       ;
+; Average fan-out                             ; 2.46      ;
++---------------------------------------------+-----------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -202,22 +200,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Mesi                      ; 34 (34)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Mesi               ; work         ;
+; |Mesi                      ; 20 (20)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Mesi               ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------+
-; State Machine - |Mesi|maquina_estados                                                                  ;
-+--------------------+--------------------+--------------------+--------------------+--------------------+
-; Name               ; maquina_estados.11 ; maquina_estados.10 ; maquina_estados.01 ; maquina_estados.00 ;
-+--------------------+--------------------+--------------------+--------------------+--------------------+
-; maquina_estados.00 ; 0                  ; 0                  ; 0                  ; 0                  ;
-; maquina_estados.01 ; 0                  ; 0                  ; 1                  ; 1                  ;
-; maquina_estados.10 ; 0                  ; 1                  ; 0                  ; 1                  ;
-; maquina_estados.11 ; 1                  ; 0                  ; 0                  ; 1                  ;
-+--------------------+--------------------+--------------------+--------------------+--------------------+
 
 
 +--------------------------------------------------------------------------------+
@@ -226,20 +211,8 @@ Encoding Type:  One-Hot
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
 ; Mem_out[0]~reg0                       ; Stuck at GND due to stuck port data_in ;
-; maquina_estados~5                     ; Lost fanout                            ;
-; maquina_estados~6                     ; Lost fanout                            ;
-; maquina_estados.11                    ; Lost fanout                            ;
-; Total Number of Removed Registers = 4 ;                                        ;
+; Total Number of Removed Registers = 1 ;                                        ;
 +---------------------------------------+----------------------------------------+
-
-
-+---------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                     ;
-+-------------------+--------------------+----------------------------------------+
-; Register name     ; Reason for Removal ; Registers Removed due to This Register ;
-+-------------------+--------------------+----------------------------------------+
-; maquina_estados~5 ; Lost Fanouts       ; maquina_estados.11                     ;
-+-------------------+--------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -247,12 +220,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -263,9 +236,7 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Mesi|Bus_out[0]~reg0      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |Mesi|maquina_estados      ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Mesi|maquina_estados      ;
-; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; No         ; |Mesi|maquina_estados      ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 20 LEs               ; 2 LEs                  ; Yes        ; |Mesi|Mem_out[1]~reg0      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -274,7 +245,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -284,7 +255,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 10 12:45:55 2018
+    Info: Processing started: Fri Nov 23 10:32:04 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mesi -c Mesi
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mesi.v
@@ -292,17 +263,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file mesi.v
 Info (12127): Elaborating entity "Mesi" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Mem_out[0]" is stuck at GND
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 34 logic cells
+    Info (21061): Implemented 20 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4619 megabytes
-    Info: Processing ended: Sat Nov 10 12:45:57 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4620 megabytes
+    Info: Processing ended: Fri Nov 23 10:32:07 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 

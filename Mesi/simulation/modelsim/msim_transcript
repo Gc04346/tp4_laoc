@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi {C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi/Mesi.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Mesi {C:/Users/Isaqu/Desktop/TP4_Laoc/Mesi/Mesi.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
@@ -28,14 +28,18 @@ vsim +altera -do Mesi_run_msim_rtl_verilog.do -l msim_transcript -gui work.Mesi
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi {C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi/Mesi.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Mesi {C:/Users/Isaqu/Desktop/TP4_Laoc/Mesi/Mesi.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
 # Top level modules:
 # 	Mesi
 # 
-do C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi/simulation/modelsim/wave.do
+do C:/Users/Isaqu/Desktop/TP4_Laoc/Mesi/simulation/modelsim/primeiro_teste.do
+# ** Error: (vish-4014) No objects found matching '/Mesi/estado_atual'.
+# Executing ONERROR command at macro C:\Users\Isaqu\Desktop\TP4_Laoc\Mesi\simulation\modelsim\primeiro_teste.do line 11
+# ** Error: (vish-4014) No objects found matching '/Mesi/maquina_estados'.
+# Executing ONERROR command at macro C:\Users\Isaqu\Desktop\TP4_Laoc\Mesi\simulation\modelsim\primeiro_teste.do line 12
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
 # 1
@@ -44,6 +48,56 @@ add wave -position 1 -format Logic -height 17 -editable 2 Edit:/Mesi/Reset
 add wave -position 2 -format Logic -height 17 -editable 2 Edit:/Mesi/clock
 add wave -position 3 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/Mesi/Bus_in
 add wave -position 4 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/Mesi/CPU
-run
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi/simulation/modelsim/primeiro_teste.do
-wave editwrite -file C:/Users/Daniel.BATCOMPUTER/Desktop/Tp4_Laoc/Mesi/simulation/modelsim/primeiro_teste.do -append
+add wave -position 5  sim:/Mesi/est_at
+add wave -position end  sim:/Mesi/est_fut
+wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 1000ps Edit:/Mesi/Bus_in
+wave modify -driver freeze -pattern constant -value 1001 -range 3 0 -starttime 50ps -endtime 150ps Edit:/Mesi/CPU
+wave create -driver freeze -pattern constant -value 00 -range 1 0 -starttime 0ps -endtime 50ps sim:/Mesi/est_at
+add wave -position 5 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/Mesi/est_at
+wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 50ps -endtime 150ps Edit:/Mesi/est_at
+run -all
+wave modify -driver freeze -pattern constant -value 1100 -range 3 0 -starttime 150ps -endtime 250ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 150ps -endtime 250ps Edit:/Mesi/est_at
+restart
+# Loading work.Mesi
+run -all
+wave modify -driver freeze -pattern constant -value 1000 -range 3 0 -starttime 250ps -endtime 350ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 00 -range 1 0 -starttime 250ps -endtime 350ps Edit:/Mesi/est_at
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 1010 -range 3 0 -starttime 50ps -endtime 150ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 50ps -endtime 350ps Edit:/Mesi/est_at
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 1000 -range 3 0 -starttime 150ps -endtime 250ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 1110 -range 3 0 -starttime 250ps -endtime 350ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 1100 -range 3 0 -starttime 350ps -endtime 450ps Edit:/Mesi/CPU
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 50ps -endtime 450ps Edit:/Mesi/est_at
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 50ps -endtime 450ps Edit:/Mesi/est_at
+wave modify -driver freeze -pattern constant -value 1010 -range 3 0 -starttime 50ps -endtime 150ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 1110 -range 3 0 -starttime 150ps -endtime 250ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 1100 -range 3 0 -starttime 250ps -endtime 350ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 1000 -range 3 0 -starttime 350ps -endtime 450ps Edit:/Mesi/CPU
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 50ps -endtime 450ps Edit:/Mesi/est_at
+wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 50ps -endtime 150ps Edit:/Mesi/Bus_in
+wave modify -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 50ps -endtime 150ps Edit:/Mesi/CPU
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 150ps -endtime 250ps Edit:/Mesi/CPU
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 150ps -endtime 250ps Edit:/Mesi/Bus_in
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 50ps -endtime 450ps Edit:/Mesi/est_at
+wave modify -driver freeze -pattern constant -value 01 -range 1 0 -starttime 50ps -endtime 150ps Edit:/Mesi/Bus_in
+wave modify -driver freeze -pattern constant -value 0000 -range 3 0 -starttime 50ps -endtime 150ps Edit:/Mesi/CPU
+restart
+run -all
+wave modify -driver freeze -pattern constant -value 10 -range 1 0 -starttime 150ps -endtime 250ps Edit:/Mesi/Bus_in
+restart
+run -all

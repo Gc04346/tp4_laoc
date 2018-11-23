@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Mesi
-Sat Nov 10 12:46:14 2018
+Fri Nov 23 10:32:30 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -16,36 +16,31 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   8. Slow Model Recovery Summary
   9. Slow Model Removal Summary
  10. Slow Model Minimum Pulse Width Summary
- 11. Slow Model Setup: 'clock'
- 12. Slow Model Hold: 'clock'
- 13. Slow Model Minimum Pulse Width: 'clock'
- 14. Setup Times
- 15. Hold Times
- 16. Clock to Output Times
- 17. Minimum Clock to Output Times
- 18. Fast Model Setup Summary
- 19. Fast Model Hold Summary
- 20. Fast Model Recovery Summary
- 21. Fast Model Removal Summary
- 22. Fast Model Minimum Pulse Width Summary
- 23. Fast Model Setup: 'clock'
- 24. Fast Model Hold: 'clock'
- 25. Fast Model Minimum Pulse Width: 'clock'
- 26. Setup Times
- 27. Hold Times
- 28. Clock to Output Times
- 29. Minimum Clock to Output Times
- 30. Multicorner Timing Analysis Summary
- 31. Setup Times
- 32. Hold Times
- 33. Clock to Output Times
- 34. Minimum Clock to Output Times
- 35. Setup Transfers
- 36. Hold Transfers
- 37. Report TCCS
- 38. Report RSKM
- 39. Unconstrained Paths
- 40. TimeQuest Timing Analyzer Messages
+ 11. Slow Model Minimum Pulse Width: 'clock'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Fast Model Setup Summary
+ 17. Fast Model Hold Summary
+ 18. Fast Model Recovery Summary
+ 19. Fast Model Removal Summary
+ 20. Fast Model Minimum Pulse Width Summary
+ 21. Fast Model Minimum Pulse Width: 'clock'
+ 22. Setup Times
+ 23. Hold Times
+ 24. Clock to Output Times
+ 25. Minimum Clock to Output Times
+ 26. Multicorner Timing Analysis Summary
+ 27. Setup Times
+ 28. Hold Times
+ 29. Clock to Output Times
+ 30. Minimum Clock to Output Times
+ 31. Clock Transfers
+ 32. Report TCCS
+ 33. Report RSKM
+ 34. Unconstrained Paths
+ 35. TimeQuest Timing Analyzer Messages
 
 
 
@@ -101,32 +96,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow Model Fmax Summary                                                                                   ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-; 421.05 MHz ; 420.17 MHz      ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+------------+---------------------------------------------------------------+
-This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
 
 
-+--------------------------------+
-; Slow Model Setup Summary       ;
-+-------+--------+---------------+
-; Clock ; Slack  ; End Point TNS ;
-+-------+--------+---------------+
-; clock ; -1.375 ; -7.372        ;
-+-------+--------+---------------+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
 
 
-+-------------------------------+
-; Slow Model Hold Summary       ;
-+-------+-------+---------------+
-; Clock ; Slack ; End Point TNS ;
-+-------+-------+---------------+
-; clock ; 0.391 ; 0.000         ;
-+-------+-------+---------------+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
 
 
 -------------------------------
@@ -146,66 +131,8 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -1.380 ; -7.380                ;
+; clock ; -1.380 ; -6.380                ;
 +-------+--------+-----------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Slow Model Setup: 'clock'                                                                                              ;
-+--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; -1.375 ; maquina_estados.00 ; maquina_estados.01 ; clock        ; clock       ; 1.000        ; 0.000      ; 2.411      ;
-; -1.363 ; maquina_estados.10 ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.399      ;
-; -1.273 ; maquina_estados.01 ; maquina_estados.01 ; clock        ; clock       ; 1.000        ; 0.000      ; 2.309      ;
-; -1.266 ; maquina_estados.10 ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.302      ;
-; -1.233 ; maquina_estados.01 ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.269      ;
-; -1.233 ; maquina_estados.01 ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.269      ;
-; -1.233 ; maquina_estados.01 ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.269      ;
-; -1.229 ; maquina_estados.10 ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.265      ;
-; -1.203 ; maquina_estados.01 ; maquina_estados.00 ; clock        ; clock       ; 1.000        ; 0.000      ; 2.239      ;
-; -1.167 ; maquina_estados.10 ; maquina_estados.00 ; clock        ; clock       ; 1.000        ; 0.000      ; 2.203      ;
-; -1.164 ; maquina_estados.10 ; maquina_estados.01 ; clock        ; clock       ; 1.000        ; 0.000      ; 2.200      ;
-; -1.113 ; maquina_estados.00 ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.149      ;
-; -1.113 ; maquina_estados.00 ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.149      ;
-; -1.113 ; maquina_estados.00 ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.149      ;
-; -1.050 ; Bus_out[1]~reg0    ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 2.086      ;
-; -0.989 ; maquina_estados.00 ; maquina_estados.00 ; clock        ; clock       ; 1.000        ; 0.000      ; 2.025      ;
-; -0.932 ; maquina_estados.00 ; maquina_estados.10 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.968      ;
-; -0.926 ; maquina_estados.10 ; maquina_estados.10 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.962      ;
-; -0.897 ; Mem_out[1]~reg0    ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.933      ;
-; -0.805 ; maquina_estados.01 ; maquina_estados.10 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.841      ;
-; -0.800 ; Bus_out[0]~reg0    ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.836      ;
-+--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Slow Model Hold: 'clock'                                                                                              ;
-+-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; 0.391 ; maquina_estados.00 ; maquina_estados.00 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.657      ;
-; 1.137 ; maquina_estados.00 ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.403      ;
-; 1.393 ; maquina_estados.01 ; maquina_estados.10 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.659      ;
-; 1.414 ; maquina_estados.00 ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.680      ;
-; 1.415 ; maquina_estados.00 ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.681      ;
-; 1.441 ; maquina_estados.10 ; maquina_estados.10 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.707      ;
-; 1.515 ; maquina_estados.01 ; maquina_estados.01 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.781      ;
-; 1.522 ; maquina_estados.10 ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.788      ;
-; 1.570 ; Bus_out[0]~reg0    ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.836      ;
-; 1.636 ; maquina_estados.01 ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.902      ;
-; 1.642 ; maquina_estados.10 ; maquina_estados.01 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.908      ;
-; 1.645 ; maquina_estados.10 ; maquina_estados.00 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.911      ;
-; 1.667 ; Mem_out[1]~reg0    ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.933      ;
-; 1.691 ; maquina_estados.01 ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.957      ;
-; 1.702 ; maquina_estados.00 ; maquina_estados.10 ; clock        ; clock       ; 0.000        ; 0.000      ; 1.968      ;
-; 1.703 ; maquina_estados.10 ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.969      ;
-; 1.756 ; maquina_estados.00 ; maquina_estados.01 ; clock        ; clock       ; 0.000        ; 0.000      ; 2.022      ;
-; 1.769 ; maquina_estados.10 ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 2.035      ;
-; 1.813 ; maquina_estados.01 ; maquina_estados.00 ; clock        ; clock       ; 0.000        ; 0.000      ; 2.079      ;
-; 1.817 ; maquina_estados.01 ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 2.083      ;
-; 1.820 ; Bus_out[1]~reg0    ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 2.086      ;
-+-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -220,12 +147,10 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; Bus_out[1]~reg0        ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; Mem_out[1]~reg0        ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; Mem_out[1]~reg0        ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.00     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.00     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.01     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.01     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.10     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.10     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; est_fut[0]~reg0        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[0]~reg0        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; est_fut[1]~reg0        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[1]~reg0        ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; Bus_out[0]~reg0|clk    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; Bus_out[0]~reg0|clk    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; Bus_out[1]~reg0|clk    ;
@@ -238,12 +163,10 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|outclk   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.00|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.00|clk ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.01|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.01|clk ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.10|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.10|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; est_fut[0]~reg0|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[0]~reg0|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; est_fut[1]~reg0|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[1]~reg0|clk    ;
 +--------+--------------+----------------+------------------+-------+------------+------------------------+
 
 
@@ -252,15 +175,17 @@ No paths to report.
 +------------+------------+-------+-------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------+------------+-------+-------+------------+-----------------+
-; Bus_in[*]  ; clock      ; 1.975 ; 1.975 ; Rise       ; clock           ;
-;  Bus_in[0] ; clock      ; 1.748 ; 1.748 ; Rise       ; clock           ;
-;  Bus_in[1] ; clock      ; 1.975 ; 1.975 ; Rise       ; clock           ;
-; CPU[*]     ; clock      ; 5.109 ; 5.109 ; Rise       ; clock           ;
-;  CPU[0]    ; clock      ; 4.837 ; 4.837 ; Rise       ; clock           ;
-;  CPU[1]    ; clock      ; 5.109 ; 5.109 ; Rise       ; clock           ;
-;  CPU[2]    ; clock      ; 4.872 ; 4.872 ; Rise       ; clock           ;
-;  CPU[3]    ; clock      ; 4.884 ; 4.884 ; Rise       ; clock           ;
-; Reset      ; clock      ; 1.308 ; 1.308 ; Rise       ; clock           ;
+; Bus_in[*]  ; clock      ; 4.980 ; 4.980 ; Rise       ; clock           ;
+;  Bus_in[0] ; clock      ; 4.980 ; 4.980 ; Rise       ; clock           ;
+;  Bus_in[1] ; clock      ; 4.948 ; 4.948 ; Rise       ; clock           ;
+; CPU[*]     ; clock      ; 4.992 ; 4.992 ; Rise       ; clock           ;
+;  CPU[0]    ; clock      ; 4.318 ; 4.318 ; Rise       ; clock           ;
+;  CPU[1]    ; clock      ; 4.992 ; 4.992 ; Rise       ; clock           ;
+;  CPU[2]    ; clock      ; 4.196 ; 4.196 ; Rise       ; clock           ;
+;  CPU[3]    ; clock      ; 2.676 ; 2.676 ; Rise       ; clock           ;
+; est_at[*]  ; clock      ; 5.318 ; 5.318 ; Rise       ; clock           ;
+;  est_at[0] ; clock      ; 2.189 ; 2.189 ; Rise       ; clock           ;
+;  est_at[1] ; clock      ; 5.318 ; 5.318 ; Rise       ; clock           ;
 +------------+------------+-------+-------+------------+-----------------+
 
 
@@ -269,66 +194,62 @@ No paths to report.
 +------------+------------+--------+--------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------+------------+--------+--------+------------+-----------------+
-; Bus_in[*]  ; clock      ; -0.976 ; -0.976 ; Rise       ; clock           ;
-;  Bus_in[0] ; clock      ; -0.976 ; -0.976 ; Rise       ; clock           ;
-;  Bus_in[1] ; clock      ; -1.235 ; -1.235 ; Rise       ; clock           ;
-; CPU[*]     ; clock      ; -3.462 ; -3.462 ; Rise       ; clock           ;
-;  CPU[0]    ; clock      ; -4.070 ; -4.070 ; Rise       ; clock           ;
-;  CPU[1]    ; clock      ; -3.927 ; -3.927 ; Rise       ; clock           ;
-;  CPU[2]    ; clock      ; -3.674 ; -3.674 ; Rise       ; clock           ;
-;  CPU[3]    ; clock      ; -3.462 ; -3.462 ; Rise       ; clock           ;
-; Reset      ; clock      ; -1.078 ; -1.078 ; Rise       ; clock           ;
+; Bus_in[*]  ; clock      ; -3.657 ; -3.657 ; Rise       ; clock           ;
+;  Bus_in[0] ; clock      ; -3.811 ; -3.811 ; Rise       ; clock           ;
+;  Bus_in[1] ; clock      ; -3.657 ; -3.657 ; Rise       ; clock           ;
+; CPU[*]     ; clock      ; -0.415 ; -0.415 ; Rise       ; clock           ;
+;  CPU[0]    ; clock      ; -3.995 ; -3.995 ; Rise       ; clock           ;
+;  CPU[1]    ; clock      ; -3.451 ; -3.451 ; Rise       ; clock           ;
+;  CPU[2]    ; clock      ; -3.077 ; -3.077 ; Rise       ; clock           ;
+;  CPU[3]    ; clock      ; -0.415 ; -0.415 ; Rise       ; clock           ;
+; est_at[*]  ; clock      ; -0.253 ; -0.253 ; Rise       ; clock           ;
+;  est_at[0] ; clock      ; -0.253 ; -0.253 ; Rise       ; clock           ;
+;  est_at[1] ; clock      ; -3.342 ; -3.342 ; Rise       ; clock           ;
 +------------+------------+--------+--------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Clock to Output Times                                                        ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Bus_out[*]       ; clock      ; 6.404 ; 6.404 ; Rise       ; clock           ;
-;  Bus_out[0]      ; clock      ; 6.404 ; 6.404 ; Rise       ; clock           ;
-;  Bus_out[1]      ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-; Mem_out[*]       ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-;  Mem_out[1]      ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-; estado_atual[*]  ; clock      ; 7.447 ; 7.447 ; Rise       ; clock           ;
-;  estado_atual[0] ; clock      ; 7.447 ; 7.447 ; Rise       ; clock           ;
-;  estado_atual[1] ; clock      ; 7.315 ; 7.315 ; Rise       ; clock           ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; Bus_out[*]  ; clock      ; 6.591 ; 6.591 ; Rise       ; clock           ;
+;  Bus_out[0] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  Bus_out[1] ; clock      ; 6.591 ; 6.591 ; Rise       ; clock           ;
+; Mem_out[*]  ; clock      ; 6.366 ; 6.366 ; Rise       ; clock           ;
+;  Mem_out[1] ; clock      ; 6.366 ; 6.366 ; Rise       ; clock           ;
+; est_fut[*]  ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  est_fut[0] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  est_fut[1] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Bus_out[*]       ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-;  Bus_out[0]      ; clock      ; 6.404 ; 6.404 ; Rise       ; clock           ;
-;  Bus_out[1]      ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-; Mem_out[*]       ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-;  Mem_out[1]      ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-; estado_atual[*]  ; clock      ; 7.177 ; 7.177 ; Rise       ; clock           ;
-;  estado_atual[0] ; clock      ; 7.177 ; 7.177 ; Rise       ; clock           ;
-;  estado_atual[1] ; clock      ; 7.191 ; 7.191 ; Rise       ; clock           ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; Bus_out[*]  ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  Bus_out[0] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  Bus_out[1] ; clock      ; 6.591 ; 6.591 ; Rise       ; clock           ;
+; Mem_out[*]  ; clock      ; 6.366 ; 6.366 ; Rise       ; clock           ;
+;  Mem_out[1] ; clock      ; 6.366 ; 6.366 ; Rise       ; clock           ;
+; est_fut[*]  ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  est_fut[0] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  est_fut[1] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+--------------------------------+
-; Fast Model Setup Summary       ;
-+-------+--------+---------------+
-; Clock ; Slack  ; End Point TNS ;
-+-------+--------+---------------+
-; clock ; -0.107 ; -0.378        ;
-+-------+--------+---------------+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
 
 
-+-------------------------------+
-; Fast Model Hold Summary       ;
-+-------+-------+---------------+
-; Clock ; Slack ; End Point TNS ;
-+-------+-------+---------------+
-; clock ; 0.215 ; 0.000         ;
-+-------+-------+---------------+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
 
 
 -------------------------------
@@ -348,66 +269,8 @@ No paths to report.
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clock ; -1.380 ; -7.380                ;
+; clock ; -1.380 ; -6.380                ;
 +-------+--------+-----------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Fast Model Setup: 'clock'                                                                                              ;
-+--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; -0.107 ; maquina_estados.01 ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.139      ;
-; -0.107 ; maquina_estados.01 ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.139      ;
-; -0.107 ; maquina_estados.01 ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.139      ;
-; -0.057 ; maquina_estados.00 ; maquina_estados.01 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.089      ;
-; -0.057 ; maquina_estados.10 ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.089      ;
-; -0.024 ; maquina_estados.10 ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.056      ;
-; -0.023 ; maquina_estados.00 ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.055      ;
-; -0.023 ; maquina_estados.00 ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.055      ;
-; -0.023 ; maquina_estados.00 ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.055      ;
-; -0.017 ; maquina_estados.10 ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 1.049      ;
-; -0.006 ; maquina_estados.01 ; maquina_estados.01 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.038      ;
-; 0.007  ; maquina_estados.01 ; maquina_estados.00 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.025      ;
-; 0.013  ; maquina_estados.10 ; maquina_estados.00 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.019      ;
-; 0.016  ; maquina_estados.10 ; maquina_estados.01 ; clock        ; clock       ; 1.000        ; 0.000      ; 1.016      ;
-; 0.083  ; Bus_out[1]~reg0    ; Bus_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.949      ;
-; 0.104  ; maquina_estados.10 ; maquina_estados.10 ; clock        ; clock       ; 1.000        ; 0.000      ; 0.928      ;
-; 0.118  ; maquina_estados.00 ; maquina_estados.00 ; clock        ; clock       ; 1.000        ; 0.000      ; 0.914      ;
-; 0.139  ; maquina_estados.00 ; maquina_estados.10 ; clock        ; clock       ; 1.000        ; 0.000      ; 0.893      ;
-; 0.144  ; Mem_out[1]~reg0    ; Mem_out[1]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.888      ;
-; 0.184  ; Bus_out[0]~reg0    ; Bus_out[0]~reg0    ; clock        ; clock       ; 1.000        ; 0.000      ; 0.848      ;
-; 0.195  ; maquina_estados.01 ; maquina_estados.10 ; clock        ; clock       ; 1.000        ; 0.000      ; 0.837      ;
-+--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Fast Model Hold: 'clock'                                                                                              ;
-+-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
-; 0.215 ; maquina_estados.00 ; maquina_estados.00 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.367      ;
-; 0.504 ; maquina_estados.00 ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.656      ;
-; 0.614 ; maquina_estados.01 ; maquina_estados.10 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.766      ;
-; 0.625 ; maquina_estados.00 ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.777      ;
-; 0.625 ; maquina_estados.00 ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.777      ;
-; 0.635 ; maquina_estados.10 ; maquina_estados.10 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.787      ;
-; 0.673 ; maquina_estados.01 ; maquina_estados.01 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.825      ;
-; 0.681 ; maquina_estados.10 ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.833      ;
-; 0.696 ; Bus_out[0]~reg0    ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.848      ;
-; 0.719 ; maquina_estados.10 ; maquina_estados.01 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.871      ;
-; 0.722 ; maquina_estados.10 ; maquina_estados.00 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.874      ;
-; 0.733 ; maquina_estados.01 ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.885      ;
-; 0.736 ; Mem_out[1]~reg0    ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.888      ;
-; 0.741 ; maquina_estados.00 ; maquina_estados.10 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.893      ;
-; 0.752 ; maquina_estados.01 ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.904      ;
-; 0.759 ; maquina_estados.00 ; maquina_estados.01 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.911      ;
-; 0.763 ; maquina_estados.10 ; Mem_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.915      ;
-; 0.797 ; Bus_out[1]~reg0    ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.949      ;
-; 0.802 ; maquina_estados.01 ; Bus_out[0]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 0.954      ;
-; 0.807 ; maquina_estados.01 ; maquina_estados.00 ; clock        ; clock       ; 0.000        ; 0.000      ; 0.959      ;
-; 0.863 ; maquina_estados.10 ; Bus_out[1]~reg0    ; clock        ; clock       ; 0.000        ; 0.000      ; 1.015      ;
-+-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------+
@@ -422,12 +285,10 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; Bus_out[1]~reg0        ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; Mem_out[1]~reg0        ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; Mem_out[1]~reg0        ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.00     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.00     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.01     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.01     ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.10     ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.10     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; est_fut[0]~reg0        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[0]~reg0        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock ; Rise       ; est_fut[1]~reg0        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[1]~reg0        ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; Bus_out[0]~reg0|clk    ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; Bus_out[0]~reg0|clk    ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; Bus_out[1]~reg0|clk    ;
@@ -440,12 +301,10 @@ No paths to report.
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|inclk[0] ;
 ; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; clock~clkctrl|outclk   ;
 ; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; clock~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.00|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.00|clk ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.01|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.01|clk ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; maquina_estados.10|clk ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; maquina_estados.10|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; est_fut[0]~reg0|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[0]~reg0|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock ; Rise       ; est_fut[1]~reg0|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock ; Rise       ; est_fut[1]~reg0|clk    ;
 +--------+--------------+----------------+------------------+-------+------------+------------------------+
 
 
@@ -454,15 +313,17 @@ No paths to report.
 +------------+------------+-------+-------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------+------------+-------+-------+------------+-----------------+
-; Bus_in[*]  ; clock      ; 0.583 ; 0.583 ; Rise       ; clock           ;
-;  Bus_in[0] ; clock      ; 0.479 ; 0.479 ; Rise       ; clock           ;
-;  Bus_in[1] ; clock      ; 0.583 ; 0.583 ; Rise       ; clock           ;
-; CPU[*]     ; clock      ; 2.595 ; 2.595 ; Rise       ; clock           ;
-;  CPU[0]    ; clock      ; 2.452 ; 2.452 ; Rise       ; clock           ;
-;  CPU[1]    ; clock      ; 2.595 ; 2.595 ; Rise       ; clock           ;
-;  CPU[2]    ; clock      ; 2.468 ; 2.468 ; Rise       ; clock           ;
-;  CPU[3]    ; clock      ; 2.514 ; 2.514 ; Rise       ; clock           ;
-; Reset      ; clock      ; 0.396 ; 0.396 ; Rise       ; clock           ;
+; Bus_in[*]  ; clock      ; 2.580 ; 2.580 ; Rise       ; clock           ;
+;  Bus_in[0] ; clock      ; 2.580 ; 2.580 ; Rise       ; clock           ;
+;  Bus_in[1] ; clock      ; 2.580 ; 2.580 ; Rise       ; clock           ;
+; CPU[*]     ; clock      ; 2.606 ; 2.606 ; Rise       ; clock           ;
+;  CPU[0]    ; clock      ; 2.215 ; 2.215 ; Rise       ; clock           ;
+;  CPU[1]    ; clock      ; 2.606 ; 2.606 ; Rise       ; clock           ;
+;  CPU[2]    ; clock      ; 2.157 ; 2.157 ; Rise       ; clock           ;
+;  CPU[3]    ; clock      ; 0.971 ; 0.971 ; Rise       ; clock           ;
+; est_at[*]  ; clock      ; 2.756 ; 2.756 ; Rise       ; clock           ;
+;  est_at[0] ; clock      ; 0.741 ; 0.741 ; Rise       ; clock           ;
+;  est_at[1] ; clock      ; 2.756 ; 2.756 ; Rise       ; clock           ;
 +------------+------------+-------+-------+------------+-----------------+
 
 
@@ -471,60 +332,62 @@ No paths to report.
 +------------+------------+--------+--------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------+------------+--------+--------+------------+-----------------+
-; Bus_in[*]  ; clock      ; -0.135 ; -0.135 ; Rise       ; clock           ;
-;  Bus_in[0] ; clock      ; -0.135 ; -0.135 ; Rise       ; clock           ;
-;  Bus_in[1] ; clock      ; -0.227 ; -0.227 ; Rise       ; clock           ;
-; CPU[*]     ; clock      ; -1.839 ; -1.839 ; Rise       ; clock           ;
-;  CPU[0]    ; clock      ; -2.086 ; -2.086 ; Rise       ; clock           ;
-;  CPU[1]    ; clock      ; -2.035 ; -2.035 ; Rise       ; clock           ;
-;  CPU[2]    ; clock      ; -1.927 ; -1.927 ; Rise       ; clock           ;
-;  CPU[3]    ; clock      ; -1.839 ; -1.839 ; Rise       ; clock           ;
-; Reset      ; clock      ; -0.276 ; -0.276 ; Rise       ; clock           ;
+; Bus_in[*]  ; clock      ; -1.921 ; -1.921 ; Rise       ; clock           ;
+;  Bus_in[0] ; clock      ; -1.967 ; -1.967 ; Rise       ; clock           ;
+;  Bus_in[1] ; clock      ; -1.921 ; -1.921 ; Rise       ; clock           ;
+; CPU[*]     ; clock      ; 0.102  ; 0.102  ; Rise       ; clock           ;
+;  CPU[0]    ; clock      ; -2.041 ; -2.041 ; Rise       ; clock           ;
+;  CPU[1]    ; clock      ; -1.824 ; -1.824 ; Rise       ; clock           ;
+;  CPU[2]    ; clock      ; -1.679 ; -1.679 ; Rise       ; clock           ;
+;  CPU[3]    ; clock      ; 0.102  ; 0.102  ; Rise       ; clock           ;
+; est_at[*]  ; clock      ; 0.188  ; 0.188  ; Rise       ; clock           ;
+;  est_at[0] ; clock      ; 0.188  ; 0.188  ; Rise       ; clock           ;
+;  est_at[1] ; clock      ; -1.787 ; -1.787 ; Rise       ; clock           ;
 +------------+------------+--------+--------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Clock to Output Times                                                        ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Bus_out[*]       ; clock      ; 3.658 ; 3.658 ; Rise       ; clock           ;
-;  Bus_out[0]      ; clock      ; 3.658 ; 3.658 ; Rise       ; clock           ;
-;  Bus_out[1]      ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-; Mem_out[*]       ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-;  Mem_out[1]      ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-; estado_atual[*]  ; clock      ; 4.131 ; 4.131 ; Rise       ; clock           ;
-;  estado_atual[0] ; clock      ; 4.131 ; 4.131 ; Rise       ; clock           ;
-;  estado_atual[1] ; clock      ; 4.068 ; 4.068 ; Rise       ; clock           ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; Bus_out[*]  ; clock      ; 3.756 ; 3.756 ; Rise       ; clock           ;
+;  Bus_out[0] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  Bus_out[1] ; clock      ; 3.756 ; 3.756 ; Rise       ; clock           ;
+; Mem_out[*]  ; clock      ; 3.652 ; 3.652 ; Rise       ; clock           ;
+;  Mem_out[1] ; clock      ; 3.652 ; 3.652 ; Rise       ; clock           ;
+; est_fut[*]  ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  est_fut[0] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  est_fut[1] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Bus_out[*]       ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-;  Bus_out[0]      ; clock      ; 3.658 ; 3.658 ; Rise       ; clock           ;
-;  Bus_out[1]      ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-; Mem_out[*]       ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-;  Mem_out[1]      ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-; estado_atual[*]  ; clock      ; 4.000 ; 4.000 ; Rise       ; clock           ;
-;  estado_atual[0] ; clock      ; 4.000 ; 4.000 ; Rise       ; clock           ;
-;  estado_atual[1] ; clock      ; 4.024 ; 4.024 ; Rise       ; clock           ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; Bus_out[*]  ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  Bus_out[0] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  Bus_out[1] ; clock      ; 3.756 ; 3.756 ; Rise       ; clock           ;
+; Mem_out[*]  ; clock      ; 3.652 ; 3.652 ; Rise       ; clock           ;
+;  Mem_out[1] ; clock      ; 3.652 ; 3.652 ; Rise       ; clock           ;
+; est_fut[*]  ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  est_fut[0] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  est_fut[1] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                          ;
-+------------------+--------+-------+----------+---------+---------------------+
-; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -1.375 ; 0.215 ; N/A      ; N/A     ; -1.380              ;
-;  clock           ; -1.375 ; 0.215 ; N/A      ; N/A     ; -1.380              ;
-; Design-wide TNS  ; -7.372 ; 0.0   ; 0.0      ; 0.0     ; -7.38               ;
-;  clock           ; -7.372 ; 0.000 ; N/A      ; N/A     ; -7.380              ;
-+------------------+--------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+;  clock           ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -6.38               ;
+;  clock           ; N/A   ; N/A  ; N/A      ; N/A     ; -6.380              ;
++------------------+-------+------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------+
@@ -532,15 +395,17 @@ No paths to report.
 +------------+------------+-------+-------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +------------+------------+-------+-------+------------+-----------------+
-; Bus_in[*]  ; clock      ; 1.975 ; 1.975 ; Rise       ; clock           ;
-;  Bus_in[0] ; clock      ; 1.748 ; 1.748 ; Rise       ; clock           ;
-;  Bus_in[1] ; clock      ; 1.975 ; 1.975 ; Rise       ; clock           ;
-; CPU[*]     ; clock      ; 5.109 ; 5.109 ; Rise       ; clock           ;
-;  CPU[0]    ; clock      ; 4.837 ; 4.837 ; Rise       ; clock           ;
-;  CPU[1]    ; clock      ; 5.109 ; 5.109 ; Rise       ; clock           ;
-;  CPU[2]    ; clock      ; 4.872 ; 4.872 ; Rise       ; clock           ;
-;  CPU[3]    ; clock      ; 4.884 ; 4.884 ; Rise       ; clock           ;
-; Reset      ; clock      ; 1.308 ; 1.308 ; Rise       ; clock           ;
+; Bus_in[*]  ; clock      ; 4.980 ; 4.980 ; Rise       ; clock           ;
+;  Bus_in[0] ; clock      ; 4.980 ; 4.980 ; Rise       ; clock           ;
+;  Bus_in[1] ; clock      ; 4.948 ; 4.948 ; Rise       ; clock           ;
+; CPU[*]     ; clock      ; 4.992 ; 4.992 ; Rise       ; clock           ;
+;  CPU[0]    ; clock      ; 4.318 ; 4.318 ; Rise       ; clock           ;
+;  CPU[1]    ; clock      ; 4.992 ; 4.992 ; Rise       ; clock           ;
+;  CPU[2]    ; clock      ; 4.196 ; 4.196 ; Rise       ; clock           ;
+;  CPU[3]    ; clock      ; 2.676 ; 2.676 ; Rise       ; clock           ;
+; est_at[*]  ; clock      ; 5.318 ; 5.318 ; Rise       ; clock           ;
+;  est_at[0] ; clock      ; 2.189 ; 2.189 ; Rise       ; clock           ;
+;  est_at[1] ; clock      ; 5.318 ; 5.318 ; Rise       ; clock           ;
 +------------+------------+-------+-------+------------+-----------------+
 
 
@@ -549,68 +414,56 @@ No paths to report.
 +------------+------------+--------+--------+------------+-----------------+
 ; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------+------------+--------+--------+------------+-----------------+
-; Bus_in[*]  ; clock      ; -0.135 ; -0.135 ; Rise       ; clock           ;
-;  Bus_in[0] ; clock      ; -0.135 ; -0.135 ; Rise       ; clock           ;
-;  Bus_in[1] ; clock      ; -0.227 ; -0.227 ; Rise       ; clock           ;
-; CPU[*]     ; clock      ; -1.839 ; -1.839 ; Rise       ; clock           ;
-;  CPU[0]    ; clock      ; -2.086 ; -2.086 ; Rise       ; clock           ;
-;  CPU[1]    ; clock      ; -2.035 ; -2.035 ; Rise       ; clock           ;
-;  CPU[2]    ; clock      ; -1.927 ; -1.927 ; Rise       ; clock           ;
-;  CPU[3]    ; clock      ; -1.839 ; -1.839 ; Rise       ; clock           ;
-; Reset      ; clock      ; -0.276 ; -0.276 ; Rise       ; clock           ;
+; Bus_in[*]  ; clock      ; -1.921 ; -1.921 ; Rise       ; clock           ;
+;  Bus_in[0] ; clock      ; -1.967 ; -1.967 ; Rise       ; clock           ;
+;  Bus_in[1] ; clock      ; -1.921 ; -1.921 ; Rise       ; clock           ;
+; CPU[*]     ; clock      ; 0.102  ; 0.102  ; Rise       ; clock           ;
+;  CPU[0]    ; clock      ; -2.041 ; -2.041 ; Rise       ; clock           ;
+;  CPU[1]    ; clock      ; -1.824 ; -1.824 ; Rise       ; clock           ;
+;  CPU[2]    ; clock      ; -1.679 ; -1.679 ; Rise       ; clock           ;
+;  CPU[3]    ; clock      ; 0.102  ; 0.102  ; Rise       ; clock           ;
+; est_at[*]  ; clock      ; 0.188  ; 0.188  ; Rise       ; clock           ;
+;  est_at[0] ; clock      ; 0.188  ; 0.188  ; Rise       ; clock           ;
+;  est_at[1] ; clock      ; -1.787 ; -1.787 ; Rise       ; clock           ;
 +------------+------------+--------+--------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Clock to Output Times                                                        ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Bus_out[*]       ; clock      ; 6.404 ; 6.404 ; Rise       ; clock           ;
-;  Bus_out[0]      ; clock      ; 6.404 ; 6.404 ; Rise       ; clock           ;
-;  Bus_out[1]      ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-; Mem_out[*]       ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-;  Mem_out[1]      ; clock      ; 6.365 ; 6.365 ; Rise       ; clock           ;
-; estado_atual[*]  ; clock      ; 7.447 ; 7.447 ; Rise       ; clock           ;
-;  estado_atual[0] ; clock      ; 7.447 ; 7.447 ; Rise       ; clock           ;
-;  estado_atual[1] ; clock      ; 7.315 ; 7.315 ; Rise       ; clock           ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; Bus_out[*]  ; clock      ; 6.591 ; 6.591 ; Rise       ; clock           ;
+;  Bus_out[0] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  Bus_out[1] ; clock      ; 6.591 ; 6.591 ; Rise       ; clock           ;
+; Mem_out[*]  ; clock      ; 6.366 ; 6.366 ; Rise       ; clock           ;
+;  Mem_out[1] ; clock      ; 6.366 ; 6.366 ; Rise       ; clock           ;
+; est_fut[*]  ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  est_fut[0] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
+;  est_fut[1] ; clock      ; 6.371 ; 6.371 ; Rise       ; clock           ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+------------------+------------+-------+-------+------------+-----------------+
-; Bus_out[*]       ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-;  Bus_out[0]      ; clock      ; 3.658 ; 3.658 ; Rise       ; clock           ;
-;  Bus_out[1]      ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-; Mem_out[*]       ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-;  Mem_out[1]      ; clock      ; 3.651 ; 3.651 ; Rise       ; clock           ;
-; estado_atual[*]  ; clock      ; 4.000 ; 4.000 ; Rise       ; clock           ;
-;  estado_atual[0] ; clock      ; 4.000 ; 4.000 ; Rise       ; clock           ;
-;  estado_atual[1] ; clock      ; 4.024 ; 4.024 ; Rise       ; clock           ;
-+------------------+------------+-------+-------+------------+-----------------+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; Bus_out[*]  ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  Bus_out[0] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  Bus_out[1] ; clock      ; 3.756 ; 3.756 ; Rise       ; clock           ;
+; Mem_out[*]  ; clock      ; 3.652 ; 3.652 ; Rise       ; clock           ;
+;  Mem_out[1] ; clock      ; 3.652 ; 3.652 ; Rise       ; clock           ;
+; est_fut[*]  ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  est_fut[0] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
+;  est_fut[1] ; clock      ; 3.659 ; 3.659 ; Rise       ; clock           ;
++-------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------+
-; Setup Transfers                                                   ;
-+------------+----------+----------+----------+----------+----------+
-; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 57       ; 0        ; 0        ; 0        ;
-+------------+----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
-
-
-+-------------------------------------------------------------------+
-; Hold Transfers                                                    ;
-+------------+----------+----------+----------+----------+----------+
-; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 57       ; 0        ; 0        ; 0        ;
-+------------+----------+----------+----------+----------+----------+
-Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
 
 
 ---------------
@@ -632,10 +485,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 7     ; 7    ;
-; Unconstrained Input Port Paths  ; 37    ; 37   ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 42    ; 42   ;
 ; Unconstrained Output Ports      ; 5     ; 5    ;
-; Unconstrained Output Port Paths ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 5     ; 5    ;
 +---------------------------------+-------+------+
 
 
@@ -645,7 +498,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 10 12:46:12 2018
+    Info: Processing started: Fri Nov 23 10:32:27 2018
 Info: Command: quartus_sta Mesi -c Mesi
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -657,45 +510,34 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clock clock
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.375
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -1.375        -7.372 clock 
-Info (332146): Worst-case hold slack is 0.391
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.391         0.000 clock 
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380        -7.380 clock 
+    Info (332119):    -1.380        -6.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
-Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.107
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):    -0.107        -0.378 clock 
-Info (332146): Worst-case hold slack is 0.215
-    Info (332119):     Slack End Point TNS Clock 
-    Info (332119): ========= ============= =====================
-    Info (332119):     0.215         0.000 clock 
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -1.380
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.380        -7.380 clock 
+    Info (332119):    -1.380        -6.380 clock 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4556 megabytes
-    Info: Processing ended: Sat Nov 10 12:46:14 2018
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4563 megabytes
+    Info: Processing ended: Fri Nov 23 10:32:30 2018
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 
