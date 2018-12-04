@@ -1,0 +1,13 @@
+Precisamos de:
+ - Tres processadores que executam apenas operacoes de read e write.
+ - Tres caches L1 com duas posições de memória cada, uma para cada processador.
+ - Uma memória compartilhada para todas as CPU's, com oito posições (para ser mapeada com 3 bits).
+ - Um barramento para ouvir e enviar os dados necessários.
+ - Simular todas as transições possíveis, como na parte 1.
+Decisões:
+ - 8 posições de memória
+ - 8 bits de instr: 00:nada;01:read;10:write. No caso de write, os 3 LSB são o dado a ser escrito. Os 3 bits intermediários são para a tag (para mapear as 8 posições de memória).
+ - O bus tem 5 bits: os 2 MSB são indicadores da mensagem, e os últimos são a tag para aquela msg.
+ - Com a exceção do processador que está atuando, os processadores escutam o BUS a cada ciclo, e verificam se possuem alguma tag que bate com a que está no BUS. Caso afirmativo, executam a ação da mensagem.
+ - A CPU envia as instruções para a sua cache. A cache envia o status (sucesso ou falha) para a máquina de estados. A máquina envia mensagens resultantes para o BUS. 
+ - A CPU contém buffer de instruções, a cache, e o módulo da máquina de estados.
