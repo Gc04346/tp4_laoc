@@ -1,0 +1,105 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do CPU_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/CPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# 
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+vsim +altera -do CPU_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
+# vsim +altera -do CPU_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
+# Loading work.Snooping
+# ** Error: (vsim-3033) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v(25): Instantiation of 'mem_instr' failed. The design unit was not found.
+# 
+#         Region: /Snooping
+#         Searched libraries:
+#             C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/simulation/modelsim/rtl_work
+# Error loading design
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vsim +altera -do CPU_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
+# vsim +altera -do CPU_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
+# Loading work.Snooping
+# Loading work.mem_instr
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v(25): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'hab_escr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/mem_instr.v(1).
+# 
+#         Region: /Snooping/instrucoes
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v(25): [PCDPC] - Port size (10 or 10) does not match connection size (9) for port 'dado'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/mem_instr.v(1).
+# 
+#         Region: /Snooping/instrucoes
+# do CPU_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/CPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# 
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Snooping/clock
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/Snooping/clear
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/Snooping/clear
+add wave -position end  sim:/Snooping/inst
+add wave -position end  sim:/Snooping/instr_out
+add wave -position end  sim:/Snooping/passo
+add wave -position end  sim:/Snooping/pc
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/simulation/modelsim/snooping_mem_instr.do
+wave editwrite -file C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/simulation/modelsim/snooping_mem_instr.do -append

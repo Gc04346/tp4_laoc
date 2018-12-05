@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\CPU\simulation\modelsim
+vCPU
+I<XSa6GdUTP6G^hA<`j]mb0
+V8e^2MaiX7NI9oGFgMMSn@1
+Z1 dC:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\CPU\simulation\modelsim
+w1544015813
+8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/CPU.v
+FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/CPU.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+n@c@p@u
+!i10b 1
+!s100 3E^=]PRYYJf<;K<77lm4h1
+!s85 0
+!s108 1544016561.100000
+!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/CPU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/CPU.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU -O0
+vSnooping
+!i10b 1
+!s100 ?CzH`I9i^oFR;ClRW0mb[3
+IiDTe=AnNGlQ`:8Xi73V[R2
+VfRRYN50mWY82NbT1_gJmD1
+R1
+w1544016447
+8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1544016561.364000
+!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/CPU/Snooping.v|
+!s101 -O0
+o-work work -O0
+n@snooping

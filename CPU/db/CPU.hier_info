@@ -1,0 +1,27 @@
+|CPU
+clock => ~NO_FANOUT~
+clear => ~NO_FANOUT~
+modo => ~NO_FANOUT~
+shared => ~NO_FANOUT~
+instr[0] => ~NO_FANOUT~
+instr[1] => ~NO_FANOUT~
+instr[2] => ~NO_FANOUT~
+instr[3] => ~NO_FANOUT~
+instr[4] => ~NO_FANOUT~
+instr[5] => ~NO_FANOUT~
+instr[6] => ~NO_FANOUT~
+instr[7] => ~NO_FANOUT~
+bus_in[0] => ~NO_FANOUT~
+bus_in[1] => ~NO_FANOUT~
+bus_in[2] => ~NO_FANOUT~
+bus_in[3] => ~NO_FANOUT~
+bus_in[4] => ~NO_FANOUT~
+bus_out[0] <= <GND>
+bus_out[1] <= <GND>
+bus_out[2] <= <GND>
+bus_out[3] <= <GND>
+bus_out[4] <= <GND>
+mem_out[0] <= <GND>
+mem_out[1] <= <GND>
+
+
