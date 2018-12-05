@@ -1,0 +1,58 @@
+module Snooping(clock, clear);
+	input clock, clear;
+	
+	reg [4:0] pc; // Contador de instrucoes.
+	reg [9:0] inst; // Armazena a instr atual.
+	wire [9:0] instr_out; // Fio que retorna a inst que sai da memoria.
+	assign instr_out = 10'b1010101010;
+	reg [2:0]passo; // Reg que armazena os passos.
+	
+	reg controleP1, controleP2, controleP3; // Define se cada processador esta agindo ou ouvindo.
+	reg hab_bus; // Habilita a escrita no bus.
+	reg [9:0] bus_in; // Mensagem que vai para o bus.
+	
+	
+	always @ (posedge clock, posedge clear) begin
+		
+		if(clear)begin
+			pc <= 5'b0;
+			passo <= 3'b0;
+		end
+		else if (clock) begin
+			case (passo)
+				3'b000: begin
+					
+					pc = pc+1; // Incrementa pc.
+					passo = passo+1;
+					inst = instr_out; // Le a instrucao vinda da memoria.
+					
+				end
+				3'b001: begin
+					passo <= passo+1;
+				end
+				3'b010: begin
+					if(inst[9:8] == 2'b00) begin
+						controleP1 <= 1'b1; // Processador 1 agindo.
+						controleP2 <= 1'b0;
+						controleP3 <= 1'b0;
+					end
+					else if(inst[9:8] == 2'b01) begin
+						controleP1 <= 1'b0; 
+						controleP2 <= 1'b1; // Processador 2 agindo.
+						controleP3 <= 1'b0;
+					end
+					else if(inst[9:8] == 2'b10) begin
+						controleP1 <= 1'b0; 
+						controleP2 <= 1'b0;
+						controleP3 <= 1'b1; // Processador 3 agindo.
+					end
+					hab_bus <= 1'b1; // Escrita no bus habilitada.
+					bus_in <= {4'b0011,inst[5:3],3'b000}; // Valor a ser escrito no bus.
+				end
+				
+			endcase
+		end
+	end
+	
+	mem_instr instrucoes (clock, clear, pc, instr_out, 0, 9'b0);
+endmodule

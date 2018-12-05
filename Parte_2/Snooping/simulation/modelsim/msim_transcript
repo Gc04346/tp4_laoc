@@ -1,0 +1,302 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Snooping_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+# 
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
+# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.CPU
+# Loading work.Mesi
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# do Snooping_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+# 
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+do C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
+# 
+#           Attempting to use alternate WLF file "./wlftyk8zed".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftyk8zed
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+run -all
+add wave -position 10  sim:/Snooping/cpu1_shared
+add wave -position 11  sim:/Snooping/cpu2_shared
+add wave -position 12  sim:/Snooping/cpu3_shared
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.CPU
+# Loading work.Mesi
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+run -all
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+do C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.CPU
+# Loading work.Mesi
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu1/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu2/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(1).
+# 
+#         Region: /Snooping/cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /Snooping/cpu3/m_e
+run -all

@@ -5,9 +5,10 @@ Precisamos de:
  - Um barramento para ouvir e enviar os dados necessários.
  - Simular todas as transições possíveis, como na parte 1.
 Decisões:
- - 8 posições de memória
  - 10 bits de instr: XXYYZZZWWW, sendo: XX - processador; YY - instrução:00:nada;01:read;10:write; ZZZ - tag (para mapear as 8 posições de memória); WWW - dado a ser escrito, no caso de instrução write; 
- - O bus tem 5 bits: os 2 MSB são indicadores da mensagem, e os últimos são a tag para aquela msg.
- - Com a exceção do processador que está atuando, os processadores escutam o BUS a cada ciclo, e verificam se possuem alguma tag que bate com a que está no BUS. Caso afirmativo, executam a ação da mensagem.
- - A CPU envia as instruções para a sua cache. A cache envia o status (sucesso ou falha) para a máquina de estados. A máquina envia mensagens resultantes para o BUS. 
- - A CPU contém buffer de instruções, a cache, e o módulo da máquina de estados.
+ - O bus tem 10 bits: XXYYZZZWWW, sendo XX - mensagem BUS; YY - mensagem MEM; ZZZ - tag; WWW - valores.
+ - A cache tem  bits: XXYYYZZZ, sendo XX - estado; YYY - tag; ZZZ - dado.
+
+
+OBS:
+ - a maquina de estados foi alterada, de forma que o sinal write back + abort mem access ficou sendo o sinal 01.
