@@ -19,7 +19,7 @@ module CPU(clock, clear, modo, instr, bus_in, bus_out);
 	wire est_fut;
 	
 	always @ (posedge clear, posedge clock) begin
-		if(clear) begin
+		if(clear) begin // Reiniciar todos os regs que são necessários.
 			cache[0][7:6] <= 2'b00;
 			cache[1][7:6] <= 2'b00;
 			passo <= 2'b00;
@@ -63,10 +63,10 @@ module CPU(clock, clear, modo, instr, bus_in, bus_out);
 						end
 					end
 					2'b10: begin
-						case (acao)
+						case (acao) // Enviamos as mensagens para o bus e executamos as ações necessárias.
 							//Se a acao for um read miss.
 							2'b00: begin
-							
+								
 							end
 							//Se a acao for um read hit.
 							2'b01: begin
