@@ -59,9 +59,9 @@ bus[9] <= bus[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |Snooping|CPU:cpu1
 clock => clock.IN1
 clear => clear.IN1
+habilita => passo.OUTPUTSELECT
+habilita => passo.OUTPUTSELECT
 habilita => shared_out~reg0.ENA
-habilita => passo[1].ENA
-habilita => passo[0].ENA
 controleP => controleP.IN1
 shared_in => ~NO_FANOUT~
 instr[0] => ~NO_FANOUT~
@@ -151,9 +151,9 @@ est_fut[1] <= est_fut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |Snooping|CPU:cpu2
 clock => clock.IN1
 clear => clear.IN1
+habilita => passo.OUTPUTSELECT
+habilita => passo.OUTPUTSELECT
 habilita => shared_out~reg0.ENA
-habilita => passo[1].ENA
-habilita => passo[0].ENA
 controleP => controleP.IN1
 shared_in => ~NO_FANOUT~
 instr[0] => ~NO_FANOUT~
@@ -243,9 +243,9 @@ est_fut[1] <= est_fut[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |Snooping|CPU:cpu3
 clock => clock.IN1
 clear => clear.IN1
+habilita => passo.OUTPUTSELECT
+habilita => passo.OUTPUTSELECT
 habilita => shared_out~reg0.ENA
-habilita => passo[1].ENA
-habilita => passo[0].ENA
 controleP => controleP.IN1
 shared_in => ~NO_FANOUT~
 instr[0] => ~NO_FANOUT~

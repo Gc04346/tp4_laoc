@@ -13,12 +13,11 @@ module Snooping(clock, clear);
 	
 	wire [9:0] bus; // Barramento de informacoes.
 	wire cpu1_shared, cpu2_shared, cpu3_shared; // Fios que informam se a tag atual estah presente no demais procs.
+	wire [9:0] bus_out_cpu1, bus_out_cpu2, bus_out_cpu3; // Saidas para o bus de cada cpu.
 	
 	// Definindo a memoria de instrucoes
 	reg [9:0] instrucao [31:0];
-	
-	assign cpu2_shared = 1'b1;
-	assign cpu3_shared = 1'b0;
+
 	always @ (posedge clock, posedge clear) begin
 		// Carregando a memoria de instrucoes
 		if(clear)begin
@@ -32,7 +31,7 @@ module Snooping(clock, clear);
 			controleP1 <= 1'b0;
 			controleP2 <= 1'b0;
 			controleP3 <= 1'b0;
-			instrucao[0] <= 10'b0;
+			instrucao[0] <= 10'b0000100000;
 			instrucao[1] <= 10'b01;
 			instrucao[2] <= 10'b10;
 			instrucao[3] <= 10'b011;
@@ -48,7 +47,7 @@ module Snooping(clock, clear);
 				3'b000: begin
 					// Reiniciar os sinais de operacao da cpu se necessario.
 					pc <= pc+1; // Incrementa pc.
-					passo <= passo+1;
+					passo <= 3'b001;
 					inst <= instrucao[pc]; // Le a instrucao vinda da memoria.
 				end
 				3'b001: begin
@@ -69,12 +68,12 @@ module Snooping(clock, clear);
 					end
 					hab_bus <= 1'b1; // Escrita no bus habilitada.
 					bus_in <= {4'b0011,inst[5:3],3'b000}; // Valor a ser escrito no bus.
-					passo <= passo+1;
+					passo <= 3'b010;
 					
 				end
 				3'b010: begin
 					hab_bus <= 1'b0;
-					passo <= passo+1;
+					passo <= 3'b011;
 					// Habilita a execucao das cpus para ouvir.
 					if(controleP1) begin 
 						hab_cpu1 <= 1'b0;
@@ -93,11 +92,12 @@ module Snooping(clock, clear);
 					end
 				end
 				3'b011: begin
-					passo <= passo+1;
+					passo <= 3'b100;
 				end
 				3'b100: begin
 					// Se algum ControlePx estiver em 1, significa que o processador x esta em modo de emissao, e portanto, necessita saber se a tag estah compartilhada.
 					// Agora habilitamos a operacao na cpu que tem emissao e desabilitamos as demais.
+					// Aqui definimos tambem se o bloco esta compartilhado em outra cache.
 					if(controleP1) begin 
 						shared <= cpu2_shared | cpu3_shared;
 						hab_cpu1 <= 1'b1;
@@ -116,6 +116,10 @@ module Snooping(clock, clear);
 						hab_cpu2 <= 1'b0;
 						hab_cpu3 <= 1'b1;
 					end
+					passo <= 3'b101;
+				end
+				3'b101: begin
+					
 				end
 			endcase
 		end
@@ -124,7 +128,7 @@ module Snooping(clock, clear);
 	
 	// Modulos a parte.
 	Bus_arbiter juiz (clock, clear, bus_in, hab_bus, bus);
-	CPU cpu1(clock, clear, hab_cpu1, controleP1, shared, inst, bus, cpu1_shared, bus_out);
-	CPU cpu2(clock, clear, hab_cpu2, controleP2, shared, inst, bus, cpu2_shared, bus_out);
-	CPU cpu3(clock, clear, hab_cpu3, controleP3, shared, inst, bus, cpu3_shared, bus_out);
+	CPU cpu1(clock, clear, hab_cpu1, controleP1, shared, inst, bus, cpu1_shared, bus_out_cpu1);
+	CPU cpu2(clock, clear, hab_cpu2, controleP2, shared, inst, bus, cpu2_shared, bus_out_cpu2);
+	CPU cpu3(clock, clear, hab_cpu3, controleP3, shared, inst, bus, cpu3_shared, bus_out_cpu3);
 endmodule

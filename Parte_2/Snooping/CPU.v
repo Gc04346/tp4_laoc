@@ -93,7 +93,9 @@ module CPU(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_o
 						if(bus_in[3:0] == 4'b0011)begin
 							pos <= bus_in[5:3] % 4;
 						end
-						passo <= passo+1;
+						passo <= 3'b001;
+						// Resetando os sinais.
+						shared_out <= 1'b0;
 					end
 					3'b001:begin
 						// No if abaixo, verificamos se a tag na posicao mapeada bate com aquela passada por parametro no bus, e se o estado

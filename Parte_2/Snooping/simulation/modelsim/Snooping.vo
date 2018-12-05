@@ -16,10 +16,10 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "12/05/2018 18:01:43"
+// DATE "12/05/2018 20:56:47"
 
 // 
-// Device: Altera EP2C35F672C6 Package FBGA672
+// Device: Altera EP4CGX15BF14C6 Package FBGA169
 // 
 
 // 
@@ -35,8 +35,8 @@ input 	clock;
 input 	clear;
 
 // Design Ports Information
-// clock	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// clear	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// clock	=>  Location: PIN_J13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clear	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -54,78 +54,28 @@ tri1 devoe;
 initial $sdf_annotate("Snooping_v.sdo");
 // synopsys translate_on
 
+wire \clock~input_o ;
+wire \clear~input_o ;
 
 
-// Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \clock~I (
-	.datain(gnd),
-	.oe(gnd),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(clock));
+// Location: IOIBUF_X33_Y15_N8
+cycloneiv_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.o(\clock~input_o ));
 // synopsys translate_off
-defparam \clock~I .input_async_reset = "none";
-defparam \clock~I .input_power_up = "low";
-defparam \clock~I .input_register_mode = "none";
-defparam \clock~I .input_sync_reset = "none";
-defparam \clock~I .oe_async_reset = "none";
-defparam \clock~I .oe_power_up = "low";
-defparam \clock~I .oe_register_mode = "none";
-defparam \clock~I .oe_sync_reset = "none";
-defparam \clock~I .operation_mode = "input";
-defparam \clock~I .output_async_reset = "none";
-defparam \clock~I .output_power_up = "low";
-defparam \clock~I .output_register_mode = "none";
-defparam \clock~I .output_sync_reset = "none";
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \clear~I (
-	.datain(gnd),
-	.oe(gnd),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(clear));
+// Location: IOIBUF_X12_Y31_N1
+cycloneiv_io_ibuf \clear~input (
+	.i(clear),
+	.ibar(gnd),
+	.o(\clear~input_o ));
 // synopsys translate_off
-defparam \clear~I .input_async_reset = "none";
-defparam \clear~I .input_power_up = "low";
-defparam \clear~I .input_register_mode = "none";
-defparam \clear~I .input_sync_reset = "none";
-defparam \clear~I .oe_async_reset = "none";
-defparam \clear~I .oe_power_up = "low";
-defparam \clear~I .oe_register_mode = "none";
-defparam \clear~I .oe_sync_reset = "none";
-defparam \clear~I .operation_mode = "input";
-defparam \clear~I .output_async_reset = "none";
-defparam \clear~I .output_power_up = "low";
-defparam \clear~I .output_register_mode = "none";
-defparam \clear~I .output_sync_reset = "none";
+defparam \clear~input .bus_hold = "false";
+defparam \clear~input .simulate_z_as = "z";
 // synopsys translate_on
 
 endmodule
