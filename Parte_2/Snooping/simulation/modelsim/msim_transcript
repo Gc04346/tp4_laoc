@@ -547,3 +547,213 @@ restart
 # 
 #         Region: /Snooping/cpu3/m_e
 run -all
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+# internal error on MenuItemCan 
+# m is .mBar.file label is End Simulation state is disabled 
+#  Trace back:  
+#    <5: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled 
+#    >4: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <3: ::Wave <trace variable?>  
+#    >2: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <1: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState 
+vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU
+# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU 
+# Loading work.CPU
+# Loading work.Mesi
+# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(133): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /CPU/m_e
+# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(133): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /CPU/m_e
+# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(133): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
+# 
+#         Region: /CPU/m_e
+# do Snooping_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+# 
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/CPU/clock
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/CPU/clear
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/CPU/clear
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/CPU/controleP
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/CPU/habilita
+wave create -driver freeze -pattern constant -value 00000000 -range 7 0 -starttime 0ps -endtime 1000ps sim:/CPU/instr
+add wave -position end  sim:/CPU/bus_out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
+# 
+#           Attempting to use alternate WLF file "./wlftmrjztw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftmrjztw
+# 
+add wave -position end  sim:/CPU/shared_out
+add wave -position end  sim:/CPU/out
+add wave -position end  sim:/CPU/cache
+add wave -position end  sim:/CPU/passo
+add wave -position end  sim:/CPU/pos
+add wave -position end  sim:/CPU/acao
+add wave -position end  sim:/CPU/Bus_out
+add wave -position end  sim:/CPU/Mem_out
+add wave -position end  sim:/CPU/est_fut
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do
+wave editwrite -file C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do -append
+run -all
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU
+# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU 
+# Loading work.CPU
+# Loading work.Mesi
+# do Snooping_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CPU
+# 
+# Top level modules:
+# 	CPU
+# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+# 
+do C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
+# 
+#           Attempting to use alternate WLF file "./wlftd000q5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftd000q5
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+# 1
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/CPU/clock
+add wave -position 2 -format Logic -height 17 -editable 2 Edit:/CPU/clear
+add wave -position 3 -format Logic -height 17 -editable 2 Edit:/CPU/controleP
+add wave -position 4 -format Logic -height 17 -editable 2 Edit:/CPU/habilita
+add wave -position 5 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/CPU/instr
+run -all

@@ -14,6 +14,7 @@ module Snooping(clock, clear);
 	wire [9:0] bus; // Barramento de informacoes.
 	wire cpu1_shared, cpu2_shared, cpu3_shared; // Fios que informam se a tag atual estah presente no demais procs.
 	wire [9:0] bus_out_cpu1, bus_out_cpu2, bus_out_cpu3; // Saidas para o bus de cada cpu.
+	wire [2:0] out_cpu1, out_cpu2, out_cpu3; // Saida de cada proc no final do processo.
 	
 	// Definindo a memoria de instrucoes
 	reg [9:0] instrucao [31:0];
@@ -128,7 +129,7 @@ module Snooping(clock, clear);
 	
 	// Modulos a parte.
 	Bus_arbiter juiz (clock, clear, bus_in, hab_bus, bus);
-	CPU cpu1(clock, clear, hab_cpu1, controleP1, shared, inst, bus, cpu1_shared, bus_out_cpu1);
-	CPU cpu2(clock, clear, hab_cpu2, controleP2, shared, inst, bus, cpu2_shared, bus_out_cpu2);
-	CPU cpu3(clock, clear, hab_cpu3, controleP3, shared, inst, bus, cpu3_shared, bus_out_cpu3);
+	CPU cpu1(clock, clear, hab_cpu1, controleP1, shared, inst, bus, cpu1_shared, bus_out_cpu1, out_cpu1);
+	CPU cpu2(clock, clear, hab_cpu2, controleP2, shared, inst, bus, cpu2_shared, bus_out_cpu2, out_cpu2);
+	CPU cpu3(clock, clear, hab_cpu3, controleP3, shared, inst, bus, cpu3_shared, bus_out_cpu3, out_cpu3);
 endmodule

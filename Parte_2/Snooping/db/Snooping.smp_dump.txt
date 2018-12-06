@@ -9,16 +9,22 @@ passo.100 0 1 0 0 0 1
 passo.101 1 0 0 0 0 1 
 
 State Machine - |Snooping|CPU:cpu3|passo
-Name passo.01 
-passo.00 0 
-passo.01 1 
+Name passo.11 passo.10 passo.01 passo.00 
+passo.00 0 0 0 0 
+passo.01 0 0 1 1 
+passo.10 0 1 0 1 
+passo.11 1 0 0 1 
 
 State Machine - |Snooping|CPU:cpu2|passo
-Name passo.01 
-passo.00 0 
-passo.01 1 
+Name passo.11 passo.10 passo.01 passo.00 
+passo.00 0 0 0 0 
+passo.01 0 0 1 1 
+passo.10 0 1 0 1 
+passo.11 1 0 0 1 
 
 State Machine - |Snooping|CPU:cpu1|passo
-Name passo.01 
-passo.00 0 
-passo.01 1 
+Name passo.11 passo.10 passo.01 passo.00 
+passo.00 0 0 0 0 
+passo.01 0 0 1 1 
+passo.10 0 1 0 1 
+passo.11 1 0 0 1 

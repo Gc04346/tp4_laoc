@@ -17,7 +17,7 @@ Z3 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1544050195.339000
+!s108 1544056857.463000
 !s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v|
 !s101 -O0
@@ -25,10 +25,10 @@ Z4 o-vlog01compat -work work -O0
 Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping -O0
 n@bus_arbiter
 vCPU
-Ia]G=g4>I<O5f4QJ?U;lOf0
-VOUJF^^7nHlh7cU5NQT1;70
+Io616?>66Y@H@zd0`AGD5X2
+VA9Ri_dT;4TB3fUA=<4Zk41
 R1
-R2
+w1544056773
 8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
 FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
 L0 1
@@ -39,9 +39,9 @@ R4
 R5
 n@c@p@u
 !i10b 1
-!s100 JR`ImjZH^afGhHeHE367E2
+!s100 b3H4`42SYo4UClE8MEU4E2
 !s85 0
-!s108 1544050195.190000
+!s108 1544056857.264000
 !s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v|
 !s101 -O0
@@ -62,15 +62,15 @@ n@mesi
 !i10b 1
 !s100 >WZbPcg<Ql0e?;eVeg7CS2
 !s85 0
-!s108 1544050194.880000
+!s108 1544056857.082000
 !s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v|
 !s101 -O0
 vSnooping
-IzzYjmiM?:388RfD;Q5>W`1
+I:YG>mU[JLn2m4:I8j:?HE2
 VfRRYN50mWY82NbT1_gJmD1
 R1
-w1544050100
+w1544056353
 8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
 FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
 L0 1
@@ -81,9 +81,9 @@ R4
 n@snooping
 R5
 !i10b 1
-!s100 Ya]_l9:JfOA8klBh=JV8l1
+!s100 YUS2_C<MG>0VIAdPFY:V;0
 !s85 0
-!s108 1544050194.660000
+!s108 1544056856.856000
 !s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v|
 !s101 -O0
