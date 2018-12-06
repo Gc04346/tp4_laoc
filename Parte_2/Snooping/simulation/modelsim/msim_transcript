@@ -10,82 +10,108 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# 
+# Top level modules:
+# 	Cpu3
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# 
+# Top level modules:
+# 	Cpu2
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# 
+# Top level modules:
+# 	Cpu1
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Snooping
 # 
 # Top level modules:
 # 	Snooping
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
 # Top level modules:
 # 	Mesi
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Bus_arbiter
 # 
 # Top level modules:
 # 	Bus_arbiter
 # 
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# 
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
 vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
 # vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
 # Loading work.Snooping
 # Loading work.Bus_arbiter
-# Loading work.CPU
+# Loading work.Cpu1
 # Loading work.Mesi
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
 # 
 #         Region: /Snooping/cpu1
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu1
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
 # 
 #         Region: /Snooping/cpu2
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu2
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
 # 
 #         Region: /Snooping/cpu3
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (10 or 10) does not match connection size (1) for port 'bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu3
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
 # do Snooping_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -94,54 +120,388 @@ vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.S
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# 
+# Top level modules:
+# 	Cpu3
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# 
+# Top level modules:
+# 	Cpu2
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# 
+# Top level modules:
+# 	Cpu1
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Snooping
 # 
 # Top level modules:
 # 	Snooping
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
 # Top level modules:
 # 	Mesi
-do C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
-# onerror {resume}
-# quietly WaveActivateNextPane {} 0
-# add wave -noupdate /Snooping/clock
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+# 
+do C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
 # 
-#           Attempting to use alternate WLF file "./wlftnajtwh".
+#           Attempting to use alternate WLF file "./wlft6edwmh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftnajtwh
+#           Using alternate file: ./wlft6edwmh
 # 
+# ** Error: (vish-4014) No objects found matching '/CPU/clock'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 4
+# ** Error: (vish-4014) No objects found matching '/CPU/clear'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 5
+# ** Error: (vish-4014) No objects found matching '/CPU/controleP'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 6
+# ** Error: (vish-4014) No objects found matching '/CPU/habilita'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 7
+# ** Error: (vish-4014) No objects found matching '/CPU/instr'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 8
+# ** Error: (vish-4014) No objects found matching '/CPU/bus_out'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 10
+# ** Error: (vish-4014) No objects found matching '/CPU/shared_out'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 11
+# ** Error: (vish-4014) No objects found matching '/CPU/out'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 12
+# ** Error: (vish-4014) No objects found matching '/CPU/cache'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 13
+# ** Error: (vish-4014) No objects found matching '/CPU/passo'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 14
+# ** Error: (vish-4014) No objects found matching '/CPU/pos'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 15
+# ** Error: (vish-4014) No objects found matching '/CPU/acao'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 16
+# ** Error: (vish-4014) No objects found matching '/CPU/Bus_out'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 18
+# ** Error: (vish-4014) No objects found matching '/CPU/Mem_out'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 19
+# ** Error: (vish-4014) No objects found matching '/CPU/est_fut'.
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 20
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: Netname is not editable or not present in the active waveform window
+# Usage: wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\cpu_emissao.do line 43
+# 1
+# 1
+do C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/Snooping_passo_4.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 0
+do C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/Snooping_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# 
+# Top level modules:
+# 	Cpu3
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# 
+# Top level modules:
+# 	Cpu2
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# 
+# Top level modules:
+# 	Cpu1
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+# 
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/Snooping/clear
+wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/Snooping/clear
+wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Snooping/clock
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/Snooping/clear
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/Snooping/clock
+add wave -position end  sim:/Snooping/instrucao
+add wave -position end  sim:/Snooping/bus
+add wave -position end  sim:/Snooping/controleP1
+add wave -position end  sim:/Snooping/controleP2
+add wave -position end  sim:/Snooping/controleP3
+add wave -position end  sim:/Snooping/hab_cpu1
+add wave -position end  sim:/Snooping/hab_cpu2
+add wave -position end  sim:/Snooping/hab_cpu3
+add wave -position end  sim:/Snooping/hab_bus
+add wave -position 4  sim:/Snooping/passo
+add wave -position 5  sim:/Snooping/pc
+add wave -position 6  sim:/Snooping/shared
+add wave -position end  sim:/Snooping/cpu1/bus_in
+add wave -position end  sim:/Snooping/cpu1/acao
+add wave -position 19  sim:/Snooping/cpu1/cache
+add wave -position end  sim:/Snooping/cpu1/controleP
+add wave -position end  sim:/Snooping/cpu1/passo
+add wave -position end  sim:/Snooping/cpu1/shared_out
+add wave -position 23  sim:/Snooping/cpu1/shared_in
+add wave -position end  sim:/Snooping/cpu1/pos
+add wave -position end  sim:/Snooping/cpu2/bus_in
+add wave -position end  sim:/Snooping/cpu2/cache
+add wave -position end  sim:/Snooping/cpu2/acao
+add wave -position end  sim:/Snooping/cpu2/controleP
+add wave -position end  sim:/Snooping/cpu2/passo
+add wave -position end  sim:/Snooping/cpu2/shared_in
+add wave -position end  sim:/Snooping/cpu2/shared_out
+add wave -position end  sim:/Snooping/cpu2/pos
+add wave -position end  sim:/Snooping/cpu3/bus_in
+add wave -position end  sim:/Snooping/cpu3/cache
+add wave -position end  sim:/Snooping/cpu3/acao
+add wave -position end  sim:/Snooping/cpu3/controleP
+add wave -position end  sim:/Snooping/cpu3/passo
+add wave -position end  sim:/Snooping/cpu3/shared_in
+add wave -position end  sim:/Snooping/cpu3/shared_out
+add wave -position end  sim:/Snooping/cpu3/pos
+add wave -position 36  sim:/Snooping/cpu3/habilita
+add wave -position 27  sim:/Snooping/cpu2/habilita
+add wave -position 18  sim:/Snooping/cpu1/habilita
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do
+wave editwrite -file C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do -append
+run -all
+add wave -position 5  sim:/Snooping/inst
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+add wave -position 28  sim:/Snooping/cpu1/bus_out
+add wave -position 39  sim:/Snooping/cpu2/bus_out
+add wave -position end  sim:/Snooping/cpu3/bus_out
+restart
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+add wave -position 29  sim:/Snooping/cpu1/m_e/est_fut
+restart
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+add wave -position 30  sim:/Snooping/cpu1/m_e/Bus_out
+restart
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do
+wave editwrite -file C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do -append
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
+# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+# do Snooping_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+do C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate -divider Snooping
 # add wave -noupdate /Snooping/clear
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
+# 
+#           Attempting to use alternate WLF file "./wlftxhv707".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftxhv707
+# 
 # add wave -noupdate /Snooping/clock
-# add wave -noupdate /Snooping/clear
+# add wave -noupdate /Snooping/instrucao
 # add wave -noupdate /Snooping/passo
-# add wave -noupdate /Snooping/pc
-# add wave -noupdate /Snooping/hab_bus
-# add wave -noupdate /Snooping/bus_in
-# add wave -noupdate /Snooping/bus
 # add wave -noupdate /Snooping/inst
+# add wave -noupdate /Snooping/pc
+# add wave -noupdate /Snooping/shared
+# add wave -noupdate -divider BUS
+# add wave -noupdate /Snooping/bus
+# add wave -noupdate /Snooping/hab_bus
+# add wave -noupdate -divider ControleCPU
 # add wave -noupdate /Snooping/controleP1
 # add wave -noupdate /Snooping/controleP2
 # add wave -noupdate /Snooping/controleP3
-# add wave -noupdate /Snooping/cpu1/bus_out
-# add wave -noupdate /Snooping/cpu1/shared_out
-# add wave -noupdate /Snooping/cpu2/shared_out
-# add wave -noupdate /Snooping/cpu3/shared_out
 # add wave -noupdate /Snooping/hab_cpu1
 # add wave -noupdate /Snooping/hab_cpu2
 # add wave -noupdate /Snooping/hab_cpu3
+# add wave -noupdate -divider Cpu1
+# add wave -noupdate /Snooping/cpu1/habilita
+# add wave -noupdate /Snooping/cpu1/bus_in
+# add wave -noupdate -expand /Snooping/cpu1/cache
+# add wave -noupdate /Snooping/cpu1/acao
+# add wave -noupdate /Snooping/cpu1/controleP
+# add wave -noupdate /Snooping/cpu1/passo
+# add wave -noupdate /Snooping/cpu1/shared_in
+# add wave -noupdate /Snooping/cpu1/shared_out
+# add wave -noupdate /Snooping/cpu1/pos
+# add wave -noupdate /Snooping/cpu1/bus_out
+# add wave -noupdate /Snooping/cpu1/m_e/est_fut
+# add wave -noupdate /Snooping/cpu1/m_e/Bus_out
+# add wave -noupdate -divider Cpu2
+# add wave -noupdate /Snooping/cpu2/habilita
+# add wave -noupdate /Snooping/cpu2/bus_in
+# add wave -noupdate /Snooping/cpu2/cache
+# add wave -noupdate /Snooping/cpu2/acao
+# add wave -noupdate /Snooping/cpu2/controleP
+# add wave -noupdate /Snooping/cpu2/passo
+# add wave -noupdate /Snooping/cpu2/shared_in
+# add wave -noupdate /Snooping/cpu2/shared_out
+# add wave -noupdate /Snooping/cpu2/pos
+# add wave -noupdate /Snooping/cpu2/bus_out
+# add wave -noupdate -divider Cpu3
+# add wave -noupdate /Snooping/cpu3/habilita
+# add wave -noupdate /Snooping/cpu3/bus_in
+# add wave -noupdate /Snooping/cpu3/cache
+# add wave -noupdate /Snooping/cpu3/acao
+# add wave -noupdate /Snooping/cpu3/controleP
+# add wave -noupdate /Snooping/cpu3/passo
+# add wave -noupdate /Snooping/cpu3/shared_in
+# add wave -noupdate /Snooping/cpu3/shared_out
+# add wave -noupdate /Snooping/cpu3/pos
+# add wave -noupdate /Snooping/cpu3/bus_out
 # TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {124 ps} 0}
+# WaveRestoreCursors {{Cursor 1} {375 ps} 0}
 # quietly wave cursor active 1
-# configure wave -namecolwidth 213
+# configure wave -namecolwidth 199
 # configure wave -valuecolwidth 100
 # configure wave -justifyvalue left
 # configure wave -signalnamewidth 0
@@ -155,605 +515,613 @@ do C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping
 # configure wave -timeline 0
 # configure wave -timelineunits ps
 # update
-# WaveRestoreZoom {0 ps} {1625 ps}
+# WaveRestoreZoom {0 ps} {798 ps}
 # view wave 
 # .main_pane.wave.interior.cs.body.pw.wf
 # wave clipboard store
+# wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/CPU/clock 
+# wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/CPU/clear 
+# wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/CPU/controleP 
+# wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/CPU/habilita 
+# wave create -driver freeze -pattern constant -value 00000000 -range 7 0 -starttime 0ps -endtime 1000ps sim:/CPU/instr 
 # wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Snooping/clock 
 # wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/Snooping/clear 
+# wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/Snooping/clear 
+# ** Error: /Snooping/clear already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\simulacao_top.do line 83
 # wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/Snooping/clear 
-# wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/Snooping/clear 
+# wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Snooping/clock 
+# ** Error: /Snooping/clock already exists in the wave, cannot add twice
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Executing ONERROR command at macro C:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim\simulacao_top.do line 85
 # WaveCollapseAll -1
 # 1
 # wave clipboard restore
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Bus_arbiter
-# 
-# Top level modules:
-# 	Bus_arbiter
-# 
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Bus_arbiter
-# 
-# Top level modules:
-# 	Bus_arbiter
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/FilaInstr.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FilaInstr
-# 
-# Top level modules:
-# 	FilaInstr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/mem_instr.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mem_instr
-# 
-# Top level modules:
-# 	mem_instr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mesi
-# 
-# Top level modules:
-# 	Mesi
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Snooping
-# 
-# Top level modules:
-# 	Snooping
-# internal error on MenuItemCan 
-# m is .mBar.file label is End Simulation state is disabled 
-#  Trace back:  
-#    <5: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled 
-#    >4: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
-#    <3: ::Wave <trace variable?>  
-#    >2: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
-#    <1: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState 
-vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
-# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
-# Loading work.Snooping
-# Loading work.Bus_arbiter
-# Loading work.CPU
-# Loading work.Mesi
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu1
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu2
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(130): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu3
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# do Snooping_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu1
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Snooping
 # 
 # Top level modules:
 # 	Snooping
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
 # Top level modules:
 # 	Mesi
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping {C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Bus_arbiter
 # 
 # Top level modules:
 # 	Bus_arbiter
 # 
-do C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
-# 
-#           Attempting to use alternate WLF file "./wlft83vhdw".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlft83vhdw
-# 
-# .main_pane.wave.interior.cs.body.pw.wf
-# 1
 add wave -position 0 -format Logic -height 17 -editable 2 Edit:/Snooping/clock
 add wave -position 1 -format Logic -height 17 -editable 2 Edit:/Snooping/clear
-add wave -position end  sim:/Snooping/cpu1/passo
-add wave -position end  sim:/Snooping/cpu1/bus_in
-add wave -position end  sim:/Snooping/cpu1/shared_out
-add wave -position end  sim:/Snooping/cpu1/shared_out
-add wave -position end  sim:/Snooping/cpu2/passo
-add wave -position end  sim:/Snooping/cpu2/cache
-add wave -position end  sim:/Snooping/cpu2/bus_in
-add wave -position end  sim:/Snooping/cpu2/shared_out
-add wave -position 20  sim:/Snooping/cpu1/cache
-add wave -position end  sim:/Snooping/cpu3/passo
-add wave -position end  sim:/Snooping/cpu3/bus_in
-add wave -position end  sim:/Snooping/cpu3/shared_out
-add wave -position end  sim:/Snooping/cpu3/cache
-add wave -position 17  sim:/Snooping/cpu3/habilita
-add wave -position 22  sim:/Snooping/cpu2/habilita
-add wave -position 21  sim:/Snooping/cpu1/habilita
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
-wave editwrite -file C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do -append
-run -all
-add wave -position 19  sim:/Snooping/cpu1/pos
-add wave -position 27  sim:/Snooping/cpu2/pos
-add wave -position 34  sim:/Snooping/cpu3/pos
-restart
-# Loading work.Snooping
-# Loading work.Bus_arbiter
-# Loading work.CPU
-# Loading work.Mesi
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu1
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(129): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu2
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(130): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu3
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-run -all
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Bus_arbiter
-# 
-# Top level modules:
-# 	Bus_arbiter
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/FilaInstr.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module FilaInstr
-# 
-# Top level modules:
-# 	FilaInstr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/mem_instr.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mem_instr
-# 
-# Top level modules:
-# 	mem_instr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mesi
-# 
-# Top level modules:
-# 	Mesi
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Snooping
-# 
-# Top level modules:
-# 	Snooping
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
-wave editwrite -file C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do -append
-vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping
-# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.Snooping 
-# Loading work.Snooping
-# Loading work.Bus_arbiter
-# Loading work.CPU
-# Loading work.Mesi
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(126): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu1
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu2
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
-# 
-#         Region: /Snooping/cpu3
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# do Snooping_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Snooping
-# 
-# Top level modules:
-# 	Snooping
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mesi
-# 
-# Top level modules:
-# 	Mesi
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Bus_arbiter
-# 
-# Top level modules:
-# 	Bus_arbiter
-# 
-do C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/snooping_cpu_shared.do
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
-# 
-#           Attempting to use alternate WLF file "./wlftanjbfn".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftanjbfn
-# 
-# .main_pane.wave.interior.cs.body.pw.wf
-# 1
-add wave -position 3 -format Logic -height 17 -editable 2 Edit:/Snooping/clock
 add wave -position 4 -format Logic -height 17 -editable 2 Edit:/Snooping/clear
+add wave -position 2 -format Logic -height 17 -editable 2 Edit:/Snooping/clock
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/Snooping/clear
 run -all
-add wave -position 16  sim:/Snooping/shared
+add wave -position 31  sim:/Snooping/cpu1/out
 restart
 # Loading work.Snooping
 # Loading work.Bus_arbiter
-# Loading work.CPU
+# Loading work.Cpu1
 # Loading work.Mesi
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(126): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(144): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
 # 
 #         Region: /Snooping/cpu1
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu1/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(127): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(145): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
 # 
 #         Region: /Snooping/cpu2
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu2/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v(128): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(1).
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(146): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
 # 
 #         Region: /Snooping/cpu3
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(113): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
-# 
-#         Region: /Snooping/cpu3/m_e
 run -all
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Bus_arbiter
 # 
 # Top level modules:
 # 	Bus_arbiter
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
 # 
 # Top level modules:
-# 	CPU
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/FilaInstr.v
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module FilaInstr
 # 
 # Top level modules:
 # 	FilaInstr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/mem_instr.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mem_instr
 # 
 # Top level modules:
 # 	mem_instr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
 # Top level modules:
 # 	Mesi
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Snooping
 # 
 # Top level modules:
 # 	Snooping
-# internal error on MenuItemCan 
-# m is .mBar.file label is End Simulation state is disabled 
-#  Trace back:  
-#    <5: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled 
-#    >4: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
-#    <3: ::Wave <trace variable?>  
-#    >2: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
-#    <1: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState 
-vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU
-# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU 
-# Loading work.CPU
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
 # Loading work.Mesi
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(133): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Bus_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(180): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
 # 
-#         Region: /CPU/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(133): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'Mem_out'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(181): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
 # 
-#         Region: /CPU/m_e
-# ** Warning: (vsim-3015) C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v(133): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'est_fut'. The port definition is at: C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v(1).
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(182): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
 # 
-#         Region: /CPU/m_e
-# do Snooping_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Snooping
-# 
-# Top level modules:
-# 	Snooping
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mesi
-# 
-# Top level modules:
-# 	Mesi
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Bus_arbiter
-# 
-# Top level modules:
-# 	Bus_arbiter
-# 
-wave create -driver freeze -pattern clock -initialvalue 0 -period 50ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/CPU/clock
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/CPU/clear
-wave modify -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 10ps Edit:/CPU/clear
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/CPU/controleP
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 1000ps sim:/CPU/habilita
-wave create -driver freeze -pattern constant -value 00000000 -range 7 0 -starttime 0ps -endtime 1000ps sim:/CPU/instr
-add wave -position end  sim:/CPU/bus_out
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
-# 
-#           Attempting to use alternate WLF file "./wlftmrjztw".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftmrjztw
-# 
-add wave -position end  sim:/CPU/shared_out
-add wave -position end  sim:/CPU/out
-add wave -position end  sim:/CPU/cache
-add wave -position end  sim:/CPU/passo
-add wave -position end  sim:/CPU/pos
-add wave -position end  sim:/CPU/acao
-add wave -position end  sim:/CPU/Bus_out
-add wave -position end  sim:/CPU/Mem_out
-add wave -position end  sim:/CPU/est_fut
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do
-wave editwrite -file C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do -append
+#         Region: /Snooping/cpu3
 run -all
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Bus_arbiter
 # 
 # Top level modules:
 # 	Bus_arbiter
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
 # 
 # Top level modules:
-# 	CPU
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/FilaInstr.v
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module FilaInstr
 # 
 # Top level modules:
 # 	FilaInstr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/mem_instr.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mem_instr
 # 
 # Top level modules:
 # 	mem_instr
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Mesi
 # 
 # Top level modules:
 # 	Mesi
-vlog -reportprogress 300 -work work C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Snooping
 # 
 # Top level modules:
 # 	Snooping
-vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU
-# vsim +altera -do Snooping_run_msim_rtl_verilog.do -l msim_transcript -gui work.CPU 
-# Loading work.CPU
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
 # Loading work.Mesi
-# do Snooping_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(180): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Snooping
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(181): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
 # 
-# Top level modules:
-# 	Snooping
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Mesi
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(182): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
 # 
-# Top level modules:
-# 	Mesi
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/CPU.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CPU
-# 
-# Top level modules:
-# 	CPU
-# vlog -vlog01compat -work work +incdir+C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping {C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v}
+#         Region: /Snooping/cpu3
+run -all
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module Bus_arbiter
 # 
 # Top level modules:
 # 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
-do C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/simulation/modelsim/cpu_emissao.do
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
-#           File in use by: Daniel  Hostname: BATCOMPUTER  ProcessID: 8244
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
-#           Attempting to use alternate WLF file "./wlftd000q5".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftd000q5
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
-# .main_pane.wave.interior.cs.body.pw.wf
-# 1
-# 1
-add wave -position 1 -format Logic -height 17 -editable 2 Edit:/CPU/clock
-add wave -position 2 -format Logic -height 17 -editable 2 Edit:/CPU/clear
-add wave -position 3 -format Logic -height 17 -editable 2 Edit:/CPU/controleP
-add wave -position 4 -format Logic -height 17 -editable 2 Edit:/CPU/habilita
-add wave -position 5 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/CPU/instr
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(184): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(185): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(186): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
 run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do
+wave editwrite -file C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do -append
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(184): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(185): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(186): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+add wave -position 43  sim:/Snooping/cpu2/m_e/est_at
+add wave -position 44  sim:/Snooping/cpu2/m_e/est_fut
+add wave -position 55  sim:/Snooping/cpu3/m_e/est_at
+add wave -position end  sim:/Snooping/cpu3/m_e/est_fut
+restart
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(184): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(185): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(186): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(254): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(255): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(256): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(284): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(285): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(286): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Bus_arbiter
+# 
+# Top level modules:
+# 	Bus_arbiter
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu1
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu1
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu2
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu2
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Cpu3
+# ** Warning: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(73): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Cpu3
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FilaInstr
+# 
+# Top level modules:
+# 	FilaInstr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mem_instr
+# 
+# Top level modules:
+# 	mem_instr
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mesi
+# 
+# Top level modules:
+# 	Mesi
+vlog -reportprogress 300 -work work C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Snooping
+# 
+# Top level modules:
+# 	Snooping
+restart
+# Loading work.Snooping
+# Loading work.Bus_arbiter
+# Loading work.Cpu1
+# Loading work.Mesi
+# Loading work.Cpu2
+# Loading work.Cpu3
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(288): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v(1).
+# 
+#         Region: /Snooping/cpu1
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(289): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v(1).
+# 
+#         Region: /Snooping/cpu2
+# ** Warning: (vsim-3015) C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v(290): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'instr'. The port definition is at: C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v(1).
+# 
+#         Region: /Snooping/cpu3
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do
+wave editwrite -file C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/simulation/modelsim/simulacao_top.do -append

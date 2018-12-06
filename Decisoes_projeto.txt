@@ -7,8 +7,8 @@ Precisamos de:
 Decisões:
  - 10 bits de instr: XXYYZZZWWW, sendo: XX - processador; YY - instrução:00:nada;01:read;10:write; ZZZ - tag (para mapear as 8 posições de memória); WWW - dado a ser escrito, no caso de instrução write; 
  - O bus tem 10 bits: XXYYZZZWWW, sendo XX - mensagem BUS; YY - mensagem MEM; ZZZ - tag; WWW - valores.
- - A cache tem  bits: XXYYYZZZ, sendo XX - estado; YYY - tag; ZZZ - dado.
-
+ - A cache tem 8 bits: XXYYYZZZ, sendo XX - estado; YYY - tag; ZZZ - dado.
+ - A memoria tem 6 bits: XXXYYY, sendo XXX - tag, YYY - valor.
 
 OBS:
  - a maquina de estados foi alterada, de forma que o sinal write back + abort mem access ficou sendo o sinal 01.

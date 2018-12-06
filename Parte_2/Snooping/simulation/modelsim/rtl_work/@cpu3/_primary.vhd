@@ -1,6 +1,6 @@
 library verilog;
 use verilog.vl_types.all;
-entity CPU is
+entity Cpu3 is
     port(
         clock           : in     vl_logic;
         clear           : in     vl_logic;
@@ -13,4 +13,4 @@ entity CPU is
         bus_out         : out    vl_logic_vector(9 downto 0);
         \out\           : out    vl_logic_vector(2 downto 0)
     );
-end CPU;
+end Cpu3;
