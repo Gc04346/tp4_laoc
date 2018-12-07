@@ -11,7 +11,7 @@ module Cpu2(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 	reg [7:0] cache [3:0]; 
 	//Contador de passos. No primeiro passo da maq de escrita, identifica um hit ou miss de acordo com a instr.
 	//No segundo passo, modifica o estado e manda mensagens para o bus.
-	reg [1:0] passo;
+	reg [2:0] passo;
 	reg [1:0] pos;
 	reg [1:0] acao; //Acao que sera indicada para a maquina de estados.
 	
@@ -131,17 +131,17 @@ module Cpu2(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 			else if(~controleP) begin //Se estiver em modo de leitura.
 				case(passo)
 					3'b000:begin
+						// Sinal para verificacao do sinal de shared.
 						if(bus_in[3:0] == 4'b0011)begin
 							pos <= bus_in[5:3] % 4;
 						end
 						passo <= 3'b001;
 						// Resetando os sinais.
-						shared_out <= 1'b0;
 					end
-					3'b001:begin
+					3'b001: begin
 						// No if abaixo, verificamos se a tag na posicao mapeada bate com aquela passada por parametro no bus, e se o estado
 						// dela eh valido. Se for, informamos que a tag buscada esta compartilhada.
-						if(cache[pos][5:3] == bus_in[5:3] & cache[pos][7:6] != 2'b00)begin
+						if(cache[pos][5:3] == bus_in[5:3] & cache[pos][7:6] != 2'b00) begin
 							shared_out <=1'b1;
 						end
 						else begin
@@ -159,7 +159,7 @@ module Cpu2(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 							out <= cache[pos][5:0];
 							cache[pos][7:6] <= est_fut; // Recebemos o estado futuro.
 						end
-						passo <= 3'b100;
+						passo <= 3'b000;
 					end	
 				endcase
 			end

@@ -1,22 +1,43 @@
 
 State Machine - |Snooping|passo
-Name passo.1111 passo.1110 passo.1101 passo.1100 passo.1011 passo.1010 passo.1001 passo.1000 passo.0111 passo.0110 passo.0101 passo.0100 passo.0011 passo.0010 passo.0001 passo.0000 
-passo.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-passo.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-passo.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-passo.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-passo.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-passo.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-passo.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-passo.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-passo.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-passo.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-passo.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-passo.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-passo.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-passo.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-passo.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-passo.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Name passo.01111 passo.01110 passo.01101 passo.01100 passo.01011 passo.01010 passo.01001 passo.01000 passo.00111 passo.00110 passo.00101 passo.00100 passo.00011 passo.00010 passo.00001 passo.00000 passo.10000 
+passo.00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+passo.00001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+passo.00010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+passo.00011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+passo.00100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+passo.00101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
+passo.00110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
+passo.00111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+passo.01000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+passo.01001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
+passo.01010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
+passo.01011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
+passo.01100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
+passo.01101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+passo.01110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+passo.01111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+passo.10000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+
+State Machine - |Snooping|Cpu3:cpu3|passo
+Name passo.110 passo.101 passo.100 passo.011 passo.010 passo.001 passo.000 
+passo.000 0 0 0 0 0 0 0 
+passo.001 0 0 0 0 0 1 1 
+passo.010 0 0 0 0 1 0 1 
+passo.011 0 0 0 1 0 0 1 
+passo.100 0 0 1 0 0 0 1 
+passo.101 0 1 0 0 0 0 1 
+passo.110 1 0 0 0 0 0 1 
+
+State Machine - |Snooping|Cpu2:cpu2|passo
+Name passo.110 passo.101 passo.100 passo.011 passo.010 passo.001 passo.000 
+passo.000 0 0 0 0 0 0 0 
+passo.001 0 0 0 0 0 1 1 
+passo.010 0 0 0 0 1 0 1 
+passo.011 0 0 0 1 0 0 1 
+passo.100 0 0 1 0 0 0 1 
+passo.101 0 1 0 0 0 0 1 
+passo.110 1 0 0 0 0 0 1 
 
 State Machine - |Snooping|Cpu1:cpu1|passo
 Name passo.110 passo.101 passo.100 passo.011 passo.010 passo.001 passo.000 

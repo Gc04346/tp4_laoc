@@ -3,7 +3,7 @@ module Snooping(clock, clear);
 	
 	reg [4:0] pc; // Contador de instrucoes.
 	reg [9:0] inst; // Armazena a instr atual.
-	reg [3:0] passo; // Reg que armazena os passos.
+	reg [4:0] passo; // Reg que armazena os passos.
 	
 	reg hab_cpu1, hab_cpu2, hab_cpu3; // Sinais que habilitam a operacao da cpu.
 	reg controleP1, controleP2, controleP3; // Define se cada processador esta agindo ou ouvindo.
@@ -29,7 +29,7 @@ module Snooping(clock, clear);
 			hab_cpu2 <= 1'b0;
 			hab_cpu3 <= 1'b0;
 			pc <= 5'b0;
-			passo <= 4'b0;
+			passo <= 5'b0;
 			hab_bus <= 1'b0;
 			shared <= 2'b0;
 			controleP1 <= 1'b0;
@@ -72,13 +72,13 @@ module Snooping(clock, clear);
 		end
 		else if (clock) begin
 			case (passo)
-				4'b0000: begin
+				5'b00000: begin
 					// Reiniciar os sinais de operacao da cpu se necessario.
 					pc <= pc+1; // Incrementa pc.
-					passo <= 4'b0001;
+					passo <= 5'b00001;
 					inst <= instrucao[pc]; // Le a instrucao vinda da memoria.
 				end
-				4'b0001: begin
+				5'b00001: begin
 					if(inst[9:8] == 2'b00) begin
 						controleP1 <= 1'b1; // Processador 1 agindo.
 						controleP2 <= 1'b0;
@@ -96,12 +96,11 @@ module Snooping(clock, clear);
 					end
 					hab_bus <= 1'b1; // Escrita no bus habilitada.
 					bus_in <= {4'b0011,inst[5:3],3'b000}; // Valor a ser escrito no bus.
-					passo <= 4'b0010;
-					
+					passo <= 5'b00010;
 				end
-				4'b0010: begin
+				5'b00010: begin
 					hab_bus <= 1'b0;
-					passo <= 4'b0011;
+					passo <= 5'b00011;
 					// Habilita a execucao das cpus para ouvir.
 					if(controleP1) begin 
 						hab_cpu1 <= 1'b0;
@@ -120,10 +119,13 @@ module Snooping(clock, clear);
 					end
 				end
 				// Stall necessario para recebimento do sinal shared.
-				4'b0011: begin
-					passo <= 4'b0100;
+				5'b00011: begin
+					passo <= 5'b00100;
 				end
-				4'b0100: begin
+				5'b00100: begin
+					passo <= 5'b00101; // Mais um stall para receber o sinal de shared.
+				end
+				5'b00101: begin
 					// Se algum ControlePx estiver em 1, significa que o processador x esta em modo de emissao, e portanto, necessita saber se a tag estah compartilhada.
 					// Agora habilitamos a operacao na cpu que tem emissao e desabilitamos as demais.
 					// Aqui definimos tambem se o bloco esta compartilhado em outra cache.
@@ -145,25 +147,25 @@ module Snooping(clock, clear);
 						hab_cpu2 <= 1'b0;
 						hab_cpu3 <= 1'b1;
 					end
-					passo <= 4'b0101;
+					passo <= 5'b0110;
 				end
-				4'b0101: begin
+				5'b00110: begin
 					// Stall para execucao do proc.
-					passo <= 4'b0110; // Passo 6.
+					passo <= 5'b00111; // Passo 7.
 				end
-				4'b0110: begin
+				5'b00111: begin
 					// Segundo passo de stall.
-					passo <= 4'b0111; // Passo 7.
+					passo <= 5'b01000; // Passo 8.
 				end
-				4'b0111: begin
+				5'b01000: begin
 					// Terceiro stall.
-					passo <= 4'b1000; // Passo 8.
+					passo <= 5'b01001; // Passo 9.
 				end
-				4'b1000: begin
+				5'b01001: begin
 					// Quarto stall.
-					passo <= 4'b1001; // Passo 9.
+					passo <= 5'b01010; // Passo 10.
 				end
-				4'b1001: begin
+				5'b01010: begin
 					// Voltamos a executar a instrucao.
 					// Desabilitamos a Cpu de escrita e habilitamos as de escuta.
 					if(controleP1) begin 
@@ -187,14 +189,14 @@ module Snooping(clock, clear);
 						hab_bus <= 1'b1;
 						bus_in <= bus_out_cpu3;
 					end
-					passo <= 4'b1010; // Passo 10.
+					passo <= 5'b01011; // Passo 11.
 				end
-				4'b1010:begin
+				5'b01011:begin
 					//Desabilitamos o bus para que, nesse meio tempo, nao haja escrita.
 					hab_bus <=1'b0;
-					passo <= 4'b1011;
+					passo <= 5'b01100;
 				end
-				4'b1011:begin
+				5'b01100:begin
 					//Nesse passo reabilitamos o hab_bus para escrever nele, caso ele tenha mandado mensagem de abort mem access+wb.
 					if(controleP1) begin 
 						hab_cpu2 <= 1'b0;
@@ -241,16 +243,16 @@ module Snooping(clock, clear);
 							bus_in <= bus_out_cpu1;
 						end
 					end
-					passo <= 4'b1100;
+					passo <= 5'b01101;
 				end
-				4'b1100: begin 
+				5'b1101: begin 
 					if(bus[7:6] == 2'b01) begin // Operacao de write-back.
 						Mem[bus[5:3]][2:0] <= bus[2:0];
 					end
 					bus_in <= {4'b0000,Mem[inst[5:3]][5:0]};
-					passo <= 4'b1101;
+					passo <= 5'b01110;
 				end
-				4'b1101: begin
+				5'b01110: begin
 					if(controleP1) begin
 						hab_cpu1 <= 1'b1;
 					end
@@ -260,13 +262,13 @@ module Snooping(clock, clear);
 					else if(controleP3) begin
 						hab_cpu3 <= 1'b1;
 					end
-					passo <= 4'b1110;
+					passo <= 5'b01111;
 				end	
-				4'b1110: begin
+				5'b01111: begin
 					// Stall de execucao da Cpu. 
-					passo <= 4'b1111;
+					passo <= 5'b10000;
 				end
-				4'b1111: begin
+				5'b10000: begin
 					if(controleP1) begin
 						hab_cpu1 <= 1'b0;
 					end
@@ -276,7 +278,7 @@ module Snooping(clock, clear);
 					else if(controleP3) begin
 						hab_cpu3 <= 1'b0;
 					end
-					passo <= 4'b0;
+					passo <= 5'b0;
 				end
 			endcase
 		end

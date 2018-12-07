@@ -2,163 +2,124 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim
+Z0 dC:\Users\Isaqu\Desktop\TP4_Laoc\Parte_2\Snooping\simulation\modelsim
 vBus_arbiter
-IiQM2_T0UX^0]?RW>oUZ_80
+Iid@bPMj<1lRl=ehV8fhz40
 V8zP?]2XXIgZ4doJb<jko^3
-Z1 dC:\Users\Daniel.BATCOMPUTER\Desktop\Pratica4_DanielSantana_IsaqueFernando\Parte_2\Snooping\simulation\modelsim
-w1544031598
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v
+Z1 dC:\Users\Isaqu\Desktop\TP4_Laoc\Parte_2\Snooping\simulation\modelsim
+Z2 w1544048142
+8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
+FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v
 L0 1
-Z2 OV;L;10.1d;51
+Z3 OV;L;10.1d;51
 r1
 31
-Z3 o-work work -O0
+Z4 o-work work -O0
 n@bus_arbiter
 !i10b 1
-!s100 EU7J;;jI85CIo5jMmBR_i1
+!s100 lW2706lS84Lc9eCji8zIG3
 !s85 0
-!s108 1544127295.831000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Bus_arbiter.v|
+!s108 1544143087.224000
+!s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Bus_arbiter.v|
 !s101 -O0
 vCpu1
-ILJK`]Fg[V_COAOif?[4DO3
+I@_><b0Z:EzKh3z^PcNS450
 V;dR1a^PWk6O?;Jk?lUlJD2
 R1
-w1544126147
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v
+w1544141604
+8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu1.v
+FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu1.v
 L0 1
-R2
+R3
 r1
 31
-R3
+R4
 n@cpu1
 !i10b 1
-!s100 RKQRGjW760ckhMV>G]>JH0
+!s100 UgA]70cj94KoGFa1Td0l^2
 !s85 0
-!s108 1544127296.019000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu1.v|
+!s108 1544143087.390000
+!s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu1.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu1.v|
 !s101 -O0
 vCpu2
-I`lIg1Rn>`hZ;0C;`zL[D^0
+I`H3hL>XU^NM1ELSi]AjVn2
 VQJ?PER2B_5NNiCnTk06[z2
 R1
-w1544126219
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v
+w1544141650
+8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu2.v
+FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu2.v
 L0 1
-R2
+R3
 r1
 31
-R3
+R4
 n@cpu2
 !i10b 1
-!s100 kaL?RVnlO5j7Wj5L0SHQ50
+!s100 A`9M@nSKYb<aiUiO0m2GO0
 !s85 0
-!s108 1544127296.316000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu2.v|
+!s108 1544143087.589000
+!s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu2.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu2.v|
 !s101 -O0
 vCpu3
-IzAG9P;AanUnYnF2z@TH[33
+I_ciYF:`hnKd3XG6<K5IB52
 VG7m1K?cBhNPgCHj2dI?d92
 R1
-w1544126225
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v
+w1544141659
+8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu3.v
+FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu3.v
 L0 1
-R2
+R3
 r1
 31
-R3
+R4
 n@cpu3
 !i10b 1
-!s100 Uch3QOa:UU:`_Mh2ObV6l3
+!s100 5C5LbIeU2Hm5iNJW?_Ta52
 !s85 0
-!s108 1544127296.597000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Cpu3.v|
-!s101 -O0
-vFilaInstr
-I@n_HTg5n4KOI21@ZOcT603
-VD05@YV_LcVzg:M^WLXZ6L0
-R1
-w1544112071
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v
-L0 1
-R2
-r1
-31
-R3
-n@fila@instr
-!i10b 1
-!s100 kI^Gn_cZWz_IKWMhgDDim3
-!s85 0
-!s108 1544127296.784000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/FilaInstr.v|
-!s101 -O0
-vmem_instr
-IZ70LVUlR8:dGA1i5DSc;D0
-VG1^30JV[K7ZEQSMjmVnKR3
-R1
-w1544015320
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v
-L0 1
-R2
-r1
-31
-R3
-!i10b 1
-!s100 ]Vk[6jd@6c:@njBG1<LKj2
-!s85 0
-!s108 1544127300.879000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/mem_instr.v|
+!s108 1544143087.802000
+!s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu3.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Cpu3.v|
 !s101 -O0
 vMesi
-IFH_e7lc?Lb9<[7c`BIF^I2
+IIDe`2MBGazmA>VCXO<BP00
 VcAW1A1Sa2E:e;m3]^SWc20
 R1
-w1544026445
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v
-L0 1
 R2
+8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
+FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v
+L0 1
+R3
 r1
 31
-R3
+R4
 n@mesi
 !i10b 1
-!s100 ]@jlM2TVRnU[kDE71V4L@1
+!s100 >WZbPcg<Ql0e?;eVeg7CS2
 !s85 0
-!s108 1544127301.082000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Mesi.v|
+!s108 1544143087.992000
+!s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Mesi.v|
 !s101 -O0
 vSnooping
 !i10b 1
-!s100 8E2CXY@U3L><i^Z<e^@CO1
-INjVjg8A_X3_5MQ;1VOCCU2
+!s100 ReE>l@afKk[=2Vd;W>KN?3
+I1U`J_:[4l=:3BRo>89RWV2
 VfRRYN50mWY82NbT1_gJmD1
 R1
-w1544127252
-8C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
-FC:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v
+w1544142766
+8C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
+FC:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-!s108 1544127301.254000
-!s107 C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v|
-!s90 -reportprogress|300|-work|work|C:/Users/Daniel.BATCOMPUTER/Desktop/Pratica4_DanielSantana_IsaqueFernando/Parte_2/Snooping/Snooping.v|
+!s108 1544143088.304000
+!s107 C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v|
+!s90 -reportprogress|300|-work|work|C:/Users/Isaqu/Desktop/TP4_Laoc/Parte_2/Snooping/Snooping.v|
 !s101 -O0
-R3
+R4
 n@snooping
