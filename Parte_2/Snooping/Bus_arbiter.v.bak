@@ -1,5 +1,3 @@
-// Modulo responsavel por comandar a escrita do bus. O top level decide a entrada e coloca na saida o valor necessario.
-// Funciona como um registrador maior.
 module Bus_arbiter(clock, clear, bus_in, hab_bus, bus);
 	input clock, clear, hab_bus;
 	input [9:0] bus_in;

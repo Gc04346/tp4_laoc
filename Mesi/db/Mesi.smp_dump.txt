@@ -1,7 +1,0 @@
-
-State Machine - |Mesi|maquina_estados
-Name maquina_estados.11 maquina_estados.10 maquina_estados.01 maquina_estados.00 
-maquina_estados.00 0 0 0 0 
-maquina_estados.01 0 0 1 1 
-maquina_estados.10 0 1 0 1 
-maquina_estados.11 1 0 0 1 

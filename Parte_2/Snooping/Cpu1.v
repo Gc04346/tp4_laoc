@@ -7,7 +7,7 @@ module Cpu1(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 	output reg shared_out;
 	output reg [2:0] out; // Saida no momento da acao. Se for leitura o valor lido na posicao e se for escrita o valor escrito na posicao.
 	
-	//2 posicoes de memoria na cache, com oito bits. Sendo eles divididos: XXYYYWWW - XX: estado; YYY: tag; WWW: dado.
+	//4 posicoes de memoria na cache, com oito bits. Sendo eles divididos: XXYYYWWW - XX: estado; YYY: tag; WWW: dado.
 	reg [7:0] cache [3:0]; 
 	//Contador de passos. No primeiro passo da maq de escrita, identifica um hit ou miss de acordo com a instr.
 	//No segundo passo, modifica o estado e manda mensagens para o bus.
@@ -31,7 +31,7 @@ module Cpu1(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 	always @ (posedge clear, posedge clock) begin
 		if(clear) begin
 			shared_out <= 1'b0;
-			passo <= 3'b00;
+			passo <= 3'b000;
 			pos <= 2'b00;
 			bus_out <= 2'b00;
 			out <= 3'b00;
@@ -124,7 +124,7 @@ module Cpu1(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 							cache[pos][5:0] <= bus_in[5:0];
 							out <= bus_in[5:0];
 						end
-						passo <= 4'b0;
+						passo <= 3'b0;
 					end
 				endcase			
 			end
@@ -135,7 +135,7 @@ module Cpu1(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 						if(bus_in[3:0] == 4'b0011)begin
 							pos <= bus_in[5:3] % 4;
 						end
-						passo <= 3'b001;
+							passo <= 3'b001;
 						// Resetando os sinais.
 					end
 					3'b001: begin
@@ -165,6 +165,7 @@ module Cpu1(clock, clear, habilita, controleP, shared_in, instr, bus_in, shared_
 			end
 		end
 	end
+	
 	Mesi m_e(clear, clock, {controleP,acao,shared_in}, bus_in[9:8], cache[pos][7:6], Bus_out, Mem_out, est_fut);
 	
 endmodule

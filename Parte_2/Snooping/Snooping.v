@@ -16,6 +16,8 @@ module Snooping(clock, clear);
 	wire [9:0] bus_out_cpu1, bus_out_cpu2, bus_out_cpu3; // Saidas para o bus de cada cpu.
 	wire [2:0] out_cpu1, out_cpu2, out_cpu3; // Saida de cada proc no final do processo.
 	
+	reg done; // Sinal que indica que uma instrucao foi terminada.
+	
 	// Definindo a memoria de instrucoes
 	reg [9:0] instrucao [31:0];
 	
@@ -38,7 +40,7 @@ module Snooping(clock, clear);
 			
 			//Nas proximas linhas, carregaremos nossa memoria de dados segundo a figura do PDF disponibilizado pela profa. Daniela Cascini,
 			//com o codigo de testes referente a esta atividade.
-			//Pos mem  -    tag | dado
+			//Pos mem  -    tag  | dado
 			Mem[0][5:0] <= 6'b000_000; //Na imagem temos o valor 1 aqui. Colocaremos o valor 0 para fins de teste.
 			Mem[1][5:0] <= 6'b001_010;
 			Mem[2][5:0] <= 6'b010_001;
@@ -74,6 +76,13 @@ module Snooping(clock, clear);
 			case (passo)
 				5'b00000: begin
 					// Reiniciar os sinais de operacao da cpu se necessario.
+					controleP1 <= 1'b0;
+					controleP2 <= 1'b0;
+					controleP3 <= 1'b0;
+					hab_bus <= 1'b0;
+					hab_cpu1 <= 1'b0;
+					hab_cpu2 <= 1'b0;
+					hab_cpu3 <=1'b0;
 					pc <= pc+1; // Incrementa pc.
 					passo <= 5'b00001;
 					inst <= instrucao[pc]; // Le a instrucao vinda da memoria.
